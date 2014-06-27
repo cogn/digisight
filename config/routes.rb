@@ -6,7 +6,7 @@ DigiSight::Application.routes.draw do
 
   end
 #match 'users/sign_in' => "devise/sessions#new" ,:via=>[:get]
-  resources :projects
+#
 #root :to => "projects#index"
 
   # The priority is based upon order of creation:
