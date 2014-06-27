@@ -20,6 +20,8 @@ DigiSight::Application.configure do
   # Generate digests for assets URLs
   config.assets.digest = true
 
+  config.assets.precompile += %w( highcharts.js )
+#config.assets.precompile += %w( jquery.dataTables.min.js jquery-ui-1.8.21.custom.min.js jquery-ui-1.8.21.custom.css bootstrap-datepicker.js fullcalendar.js)
   # Defaults to nil and saved in location specified by config.assets.prefix
   # config.assets.manifest = YOUR_PATH
 
