@@ -83,6 +83,8 @@ application.js: application-51549400c81493553600a4e68bc1efd7.js
 application/index.js: application-51549400c81493553600a4e68bc1efd7.js
 highcharts.js: highcharts-f905583ef27f70513ba8c7121095e052.js
 highcharts/index.js: highcharts-f905583ef27f70513ba8c7121095e052.js
+scripts.js: scripts-9d56e50a69b0039758055f8aeaac9806.js
+scripts/index.js: scripts-9d56e50a69b0039758055f8aeaac9806.js
 application.css: application-b65e773d7969f903408a8f6b6de52c4c.css
 application/index.css: application-b65e773d7969f903408a8f6b6de52c4c.css
 jquery.min.map: jquery.min-e146c025d6a36461812bc97143056bd3.map
