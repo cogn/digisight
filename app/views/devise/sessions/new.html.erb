@@ -8,10 +8,10 @@
   <div class="login_signup"><%= f.label :password %></div>
   <div class="login_signup_text"><%= f.password_field :password ,:size =>"25"%></div>
 
-<div>  
- Dashboard <%= radio_button_tag 'login_from','dashboard' ,true%>
+<div class="font-size:14px;">  
+  <%= radio_button_tag 'login_from','dashboard' ,true,:class=>"size_font"%> Dashboard
 
-  KPI Finder <%= radio_button_tag 'login_from','kpi_finder',false%>
+   <%= radio_button_tag 'login_from','kpi_finder',false,:class=>"size_font"%> KPI Finder
 </div>
 
 

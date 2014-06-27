@@ -1,17 +1,27 @@
 <style type="text/css">
-#container
+.container
 {
 
 position:relative;
 }
-#text
+.text
 {
 z-index:100;
 position:absolute;
 color:white;
 font-size:24px;
 font-weight:bold;
-left:56px;
+left:48px;
+top:48px;
+}
+.text2
+{
+z-index:100;
+position:absolute;
+color:white;
+font-size:24px;
+font-weight:bold;
+left:175px;
 top:48px;
 }
 </style>
@@ -33,11 +43,10 @@ top:48px;
 
 
 <div style="margin-top:12px;">
- <div style="float:left;"> <img src="/assets/MMR_Excel Dashboard_Campaign_Email_first.jpg" width="300px" height="200">
+ <div style="float:left;padding-right:20px;padding-left:10px;"> <div id="chart1"></div>
 </div>
 <div style="float:left;">
-<img src="/assets/MMR_Excel Dashboard_Campaign_Email_second.jpg" width="300px" height="200" > 
-</div>
+<div id="chart2"></div></div>
 </div>
 
 </div>
@@ -95,13 +104,20 @@ top:48px;
     <h4 style="background-color:#BB9056;font-weight:bold;text-align:center;padding-top:10px;padding-bottom:10px;">Delivery KPIs</h4>
 </div>
 <div style="width:100%;background-color:#2E3032">
-    <div style="float:left;width:20%;" id="container"><img id="image"src="/assets/MMR_ Dashboard_Campaign_Email_blue.png"  hspace="42" vspace="18" width="150"> <p id="text">
-        25%
+    <div style="float:left;width:20%;" class="container"><img id="image"src="/assets/MMR_ Dashboard_Campaign_Email_blue.png"  hspace="42" vspace="18" width="150"> <p class="text">
+        94.3%
     </p></div>
-    <div style="float:left;width:20%;"><img src="/assets/MMR_ Dashboard_Campaign_Email_blue.png"  hspace="42" vspace="18" width="150"></div>
-    <div style="float:left;width:20%;"><img src="/assets/MMR_ Dashboard_Campaign_Email_blue.png"  hspace="42" vspace="18"  width="150"></div>
-    <div style="float:left;width:20%;"><img src="/assets/MMR_ Dashboard_Campaign_Email_blue.png"  hspace="42" vspace="18"  width="150"></div>
-    <div style="float:left;width:20%;"><img src="/assets/MMR_ Dashboard_Campaign_Email_blue.png"  hspace="42" vspace="18"  width="150"></div>
+    <div style="float:left;width:20%;" class="container"><img src="/assets/MMR_ Dashboard_Campaign_Email_blue.png"  hspace="42" vspace="18" width="150"><p class="text">
+        3.3%
+    </p></div>
+    <div style="float:left;width:20%;" class="container"><img src="/assets/MMR_ Dashboard_Campaign_Email_blue.png"  hspace="42" vspace="18"  width="150">
+    <p class="text">
+        2.3%
+    </p></div>
+    <div style="float:left;width:20%;" class="container"><img src="/assets/MMR_ Dashboard_Campaign_Email_blue.png"  hspace="42" vspace="18"  width="150"><p class="text">
+        $0.24
+    </p></div>
+    <div style="float:left;width:20%;" class="container"><img src="/assets/MMR_ Dashboard_Campaign_Email_blue.png"  hspace="42" vspace="18"  width="150"><p class="text">54142</p></div>
 </div>
 <div style="height:200px;width:100%;background-color:#2E3032">
     <div style="float:left;width:20%;align:right;"><h3 style="margin-left:6px;background-color:#4F81BC;text-align:center;width:150px;font-size:12px;font-weight:bold;color:#ffffff;padding:11px 0 11px 0;">Delivery rate</h3></div>
@@ -114,11 +130,24 @@ top:48px;
     <h4 style="background-color:#BB9056;font-weight:bold;text-align:center;padding-top:10px;padding-bottom:10px;">Response KPIs</h4>
 </div>
 <div style="width:100%;background-color:#2E3032">
-    <div style="float:left;width:20%;"><img src="/assets/MMR_ Dashboard_Campaign_Email_green.png"  hspace="42" vspace="18" width="150"></div>
-    <div style="float:left;width:20%;"><img src="/assets/MMR_ Dashboard_Campaign_Email_green.png"  hspace="42" vspace="18" width="150"></div>
-    <div style="float:left;width:20%;"><img src="/assets/MMR_ Dashboard_Campaign_Email_green.png"  hspace="42" vspace="18"  width="150"></div>
-    <div style="float:left;width:20%;"><img src="/assets/MMR_ Dashboard_Campaign_Email_green.png"  hspace="42" vspace="18"  width="150"></div>
-    <div style="float:left;width:20%;"><img src="/assets/MMR_ Dashboard_Campaign_Email_green.png"  hspace="42" vspace="18"  width="150"></div>
+    <div style="float:left;width:20%;" class="container"><img src="/assets/MMR_ Dashboard_Campaign_Email_green.png"  hspace="42" vspace="18" width="150">
+        <p class="text">
+        93.0%
+    </p>
+    </div>
+    <div style="float:left;width:20%;" class="container"><img src="/assets/MMR_ Dashboard_Campaign_Email_green.png"  hspace="42" vspace="18" width="150">
+    <p class="text">
+        76.3%
+    </p></div>
+    <div style="float:left;width:20%;" class="container"><img src="/assets/MMR_ Dashboard_Campaign_Email_green.png"  hspace="42" vspace="18"  width="150"><p class="text">
+        5.5%
+    </p></div>
+    <div style="float:left;width:20%;" class="container"><img src="/assets/MMR_ Dashboard_Campaign_Email_green.png"  hspace="42" vspace="18"  width="150"><p class="text">
+        22.8%
+    </p></div>
+    <div style="float:left;width:20%;" class="container"><img src="/assets/MMR_ Dashboard_Campaign_Email_green.png"  hspace="42" vspace="18"  width="150"><p class="text">
+        3594
+    </p></div>
 </div>
 <div style="height:200px;width:100%;background-color:#2E3032">
     <div style="float:left;width:20%;align:right;"><h3 style="margin-left:6px;background-color:#00B050;text-align:center;width:150px;font-size:12px;font-weight:bold;color:#ffffff;padding:11px 0 11px 0;">Open Rate</h3></div>
@@ -131,11 +160,21 @@ top:48px;
     <h4 style="background-color:#BB9056;font-weight:bold;text-align:center;padding-top:10px;padding-bottom:10px;">Landing Page KPIs</h4>
 </div>
 <div style="width:100%;background-color:#2E3032">
-    <div style="float:left;width:20%;"><img src="/assets/MMR_ Dashboard_Campaign_Email_hash.png"  hspace="42" vspace="18" width="150"></div>
-    <div style="float:left;width:20%;"><img src="/assets/MMR_ Dashboard_Campaign_Email_hash.png"  hspace="42" vspace="18" width="150"></div>
-    <div style="float:left;width:20%;"><img src="/assets/MMR_ Dashboard_Campaign_Email_hash.png"  hspace="42" vspace="18"  width="150"></div>
-    <div style="float:left;width:20%;"><img src="/assets/MMR_ Dashboard_Campaign_Email_hash.png"  hspace="42" vspace="18"  width="150"></div>
-    <div style="float:left;width:20%;"><img src="/assets/MMR_ Dashboard_Campaign_Email_hash.png"  hspace="42" vspace="18"  width="150"></div>
+    <div style="float:left;width:20%;" class="container"><img src="/assets/MMR_ Dashboard_Campaign_Email_hash.png"  hspace="42" vspace="18" width="150"><p class="text">
+        24.8%
+    </p></div>
+    <div style="float:left;width:20%;" class="container"><img src="/assets/MMR_ Dashboard_Campaign_Email_hash.png"  hspace="42" vspace="18" width="150"><p class="text">
+        96.2%
+    </p></div>
+    <div style="float:left;width:20%;" class="container"><img src="/assets/MMR_ Dashboard_Campaign_Email_hash.png"  hspace="42" vspace="18"  width="150"><p class="text">
+        5.7%
+    </p></div>
+    <div style="float:left;width:20%;" class="container"><img src="/assets/MMR_ Dashboard_Campaign_Email_hash.png"  hspace="42" vspace="18"  width="150"><p class="text">
+        58.1%
+    </p></div>
+    <div style="float:left;width:20%;" class="container"><img src="/assets/MMR_ Dashboard_Campaign_Email_hash.png"  hspace="42" vspace="18"  width="150"><p class="text">
+        34.8%
+    </p></div>
 </div>
 <div style="height:200px;width:100%;background-color:#2E3032">
     <div style="float:left;width:20%;align:right;"><h3 style="margin-left:6px;background-color:#A6A6A6;text-align:center;width:150px;font-size:12px;font-weight:bold;color:#ffffff;padding:11px 0 11px 0;">Click through rate (CTR)</h3></div>
@@ -147,9 +186,15 @@ top:48px;
     <div style="float:left;width:20%;"><h3 style="margin-left:6px;background-color:#A6A6A6;text-align:center;width:150px;font-size:12px;font-weight:bold;color:#ffffff;padding:11px 0 11px 0;">Depth of Visit</h3></div>
 </div>
 <div style="width:100%;background-color:#2E3032">
-    <div style="float:left;width:33%;"><img src="/assets/MMR_ Dashboard_Campaign_Email_hash.png" style="margin-left:148px;" hspace="42" vspace="18" width="150"></div>
-    <div style="float:left;width:33%;"><img src="/assets/MMR_ Dashboard_Campaign_Email_hash.png" style="margin-left:135px;" hspace="42" vspace="18" width="150"></div>
-    <div style="float:left;width:33%;"><img src="/assets/MMR_ Dashboard_Campaign_Email_hash.png"  style="margin-left:104px;" hspace="42" vspace="18"  width="150"></div>
+    <div class="container" style="float:left;width:33%;"><img src="/assets/MMR_ Dashboard_Campaign_Email_hash.png" style="margin-left:148px;" hspace="42" vspace="18" width="150"><p class="text2">
+        8.4%
+    </p></div>
+    <div class="container" style="float:left;width:33%;"><img src="/assets/MMR_ Dashboard_Campaign_Email_hash.png" style="margin-left:135px;" hspace="42" vspace="18" width="150"><p class="text2">
+        1.43%
+    </p></div>
+    <div class="container" style="float:left;width:33%;"><img src="/assets/MMR_ Dashboard_Campaign_Email_hash.png"  style="margin-left:104px;" hspace="42" vspace="18"  width="150"><p class="text2">
+        4.9%
+    </p></div>
 </div>
 <div style="height:200px;width:100%;background-color:#2E3032">
     <div style="float:left;width:33%;align:right;"><h3 style="margin-left:148px;background-color:#A6A6A6;text-align:center;width:150px;font-size:12px;font-weight:bold;color:#ffffff;padding:11px 0 11px 0;">Exit Rate</h3></div>
@@ -163,9 +208,16 @@ top:48px;
     <div style="background-color:#2E3032;padding-top:12px;padding-bottom:9px;float:left;width:30%"><h4 style="background-color:#BB9056;font-weight:bold;text-align:center;padding-top:10px;padding-bottom:10px;">IVR / HelpCenter KPIs</h4></div>
 </div>
 <div style="width:100%;background-color:#2E3032">
-    <div style="float:left;width:33%;"><img src="/assets/MMR_ Dashboard_Campaign_Email_orange.png" style="margin-left:148px;" hspace="42" vspace="18" width="150"></div>
-    <div style="float:left;width:33%;"><img src="/assets/MMR_ Dashboard_Campaign_Email_orange.png" style="margin-left:135px;" hspace="42" vspace="18" width="150"></div>
-    <div style="float:left;width:33%;"><img src="/assets/MMR_ Dashboard_Campaign_Email_blue.png"  style="margin-left:104px;" hspace="42" vspace="18"  width="150"></div>
+    <div style="float:left;width:33%;" class="container"><img src="/assets/MMR_ Dashboard_Campaign_Email_orange.png" style="margin-left:148px;" hspace="42" vspace="18" width="150">
+    <p class="text2">
+        34.8%
+    </p></div>
+    <div style="float:left;width:33%;" class="container"><img src="/assets/MMR_ Dashboard_Campaign_Email_orange.png" style="margin-left:135px;" hspace="42" vspace="18" width="150"><p class="text2">
+        34.8%
+    </p></div>
+    <div style="float:left;width:33%;" class="container"><img src="/assets/MMR_ Dashboard_Campaign_Email_blue.png"  style="margin-left:104px;" hspace="42" vspace="18"  width="150"><p class="text2">
+        34.8%
+    </p></div>
 </div>
 <div style="height:304px;width:100%;background-color:#2E3032">
     <div style="float:left;width:33%;align:right;"><h3 style="margin-left:148px;background-color:#E06D0F;text-align:center;width:150px;font-size:12px;font-weight:bold;color:#ffffff;padding:11px 0 11px 0;">Share per Impression</h3></div>
@@ -177,11 +229,21 @@ top:48px;
     <h4 style="background-color:#BB9056;font-weight:bold;text-align:center;padding-top:10px;padding-bottom:10px;">Email Campaign KPIs</h4>
 </div>
 <div style="width:100%;background-color:#2E3032">
-    <div style="float:left;width:20%;"><img src="/assets/MMR_ Dashboard_Campaign_Email_lignbrown.png"  hspace="42" vspace="18" width="150"></div>
-    <div style="float:left;width:20%;"><img src="/assets/MMR_ Dashboard_Campaign_Email_lignbrown.png"  hspace="42" vspace="18" width="150"></div>
-    <div style="float:left;width:20%;"><img src="/assets/MMR_ Dashboard_Campaign_Email_lignbrown.png"  hspace="42" vspace="18"  width="150"></div>
-    <div style="float:left;width:20%;"><img src="/assets/MMR_ Dashboard_Campaign_Email_lignbrown.png"  hspace="42" vspace="18"  width="150"></div>
-    <div style="float:left;width:20%;"><img src="/assets/MMR_ Dashboard_Campaign_Email_lignbrown.png"  hspace="42" vspace="18"  width="150"></div>
+    <div style="float:left;width:20%;" class="container"><img src="/assets/MMR_ Dashboard_Campaign_Email_lignbrown.png"  hspace="42" vspace="18" width="150"><p class="text">
+        40.8%
+    </p></div>
+    <div style="float:left;width:20%;" class="container"><img src="/assets/MMR_ Dashboard_Campaign_Email_lignbrown.png"  hspace="42" vspace="18" width="150"><p class="text">
+        $25.91
+    </p></div>
+    <div style="float:left;width:20%;" class="container"><img src="/assets/MMR_ Dashboard_Campaign_Email_lignbrown.png"  hspace="42" vspace="18"  width="150"><p class="text">
+        79.4%
+    </p></div>
+    <div style="float:left;width:20%;" class="container"><img src="/assets/MMR_ Dashboard_Campaign_Email_lignbrown.png"  hspace="42" vspace="18"  width="150"><p class="text">
+        16.7%
+    </p></div>
+    <div style="float:left;width:20%;" class="container"><img src="/assets/MMR_ Dashboard_Campaign_Email_lignbrown.png"  hspace="42" vspace="18"  width="150"><p class="text">
+        17.6%
+    </p></div>
 </div>
 <div style="height:200px;width:100%;background-color:#2E3032">
     <div style="float:left;width:20%;align:right;"><h3 style="margin-left:6px;background-color:#C4BD97;text-align:center;width:150px;font-size:12px;font-weight:bold;padding:11px 0 11px 0;">Subscriber Retention Rate</h3></div>
@@ -191,11 +253,21 @@ top:48px;
     <div style="float:left;width:20%;"><h3 style="margin-left:6px;background-color:#C4BD97;text-align:center;width:150px;font-size:12px;font-weight:bold;padding:11px 0 11px 0;">Actions Completed</h3></div>
 </div>
 <div style="width:100%;background-color:#2E3032">
-    <div style="float:left;width:20%;"><img src="/assets/MMR_ Dashboard_Campaign_Email_lignbrown.png"  hspace="42" vspace="18" width="150"></div>
-    <div style="float:left;width:20%;"><img src="/assets/MMR_ Dashboard_Campaign_Email_lignbrown.png"  hspace="42" vspace="18" width="150"></div>
-    <div style="float:left;width:20%;"><img src="/assets/MMR_ Dashboard_Campaign_Email_lignbrown.png"  hspace="42" vspace="18"  width="150"></div>
-    <div style="float:left;width:20%;"><img src="/assets/MMR_ Dashboard_Campaign_Email_lignbrown.png"  hspace="42" vspace="18"  width="150"></div>
-    <div style="float:left;width:20%;"><img src="/assets/MMR_ Dashboard_Campaign_Email_lignbrown.png"  hspace="42" vspace="18"  width="150"></div>
+    <div style="float:left;width:20%;" class="container"><img src="/assets/MMR_ Dashboard_Campaign_Email_lignbrown.png"  hspace="42" vspace="18" width="150"><p class="text">
+        $5,923
+    </p></div>
+    <div style="float:left;width:20%;" class="container"><img src="/assets/MMR_ Dashboard_Campaign_Email_lignbrown.png"  hspace="42" vspace="18" width="150"><p class="text">
+        11208
+    </p></div>
+    <div style="float:left;width:20%;" class="container"><img src="/assets/MMR_ Dashboard_Campaign_Email_lignbrown.png"  hspace="42" vspace="18"  width="150"><p class="text">
+        7042
+    </p></div>
+    <div style="float:left;width:20%;" class="container"><img src="/assets/MMR_ Dashboard_Campaign_Email_lignbrown.png"  hspace="42" vspace="18"  width="150"><p class="text">
+        8782
+    </p></div>
+    <div style="float:left;width:20%;" class="container"><img src="/assets/MMR_ Dashboard_Campaign_Email_lignbrown.png"  hspace="42" vspace="18"  width="150"><p class="text">
+        78.4%
+    </p></div>
 </div>
 <div style="height:200px;width:100%;background-color:#2E3032">
     <div style="float:left;width:20%;align:right;"><h3 style="margin-left:6px;background-color:#C4BD97;text-align:center;width:150px;font-size:12px;font-weight:bold;padding:11px 0 11px 0;">CPM (Cost per thousand impression)</h3></div>
@@ -205,9 +277,15 @@ top:48px;
     <div style="float:left;width:20%;"><h3 style="margin-left:6px;background-color:#C4BD97;text-align:center;width:150px;font-size:12px;font-weight:bold;padding:11px 0 11px 0;">Site Traffic</h3></div>
 </div>
 <div style="width:100%;background-color:#2E3032">
-    <div style="float:left;width:33%;"><img src="/assets/MMR_ Dashboard_Campaign_Email_lignbrown.png" style="margin-left:148px;" hspace="42" vspace="18" width="150"></div>
-    <div style="float:left;width:33%;"><img src="/assets/MMR_ Dashboard_Campaign_Email_lignbrown.png" style="margin-left:135px;" hspace="42" vspace="18" width="150"></div>
-    <div style="float:left;width:33%;"><img src="/assets/MMR_ Dashboard_Campaign_Email_lignbrown.png"  style="margin-left:104px;" hspace="42" vspace="18"  width="150"></div>
+    <div style="float:left;width:33%;" class="container"><img src="/assets/MMR_ Dashboard_Campaign_Email_lignbrown.png" style="margin-left:148px;" hspace="42" vspace="18" width="150"><p class="text2">
+        78.4%
+    </p></div>
+    <div style="float:left;width:33%;" class="container"><img src="/assets/MMR_ Dashboard_Campaign_Email_lignbrown.png" style="margin-left:135px;" hspace="42" vspace="18" width="150"><p class="text2">
+        78.4%
+    </p></div>
+    <div style="float:left;width:33%;" class="container"><img src="/assets/MMR_ Dashboard_Campaign_Email_lignbrown.png"  style="margin-left:104px;" hspace="42" vspace="18"  width="150"><p class="text2">
+        78.4%
+    </p></div>
 </div>
 <div style="height:200px;width:100%;background-color:#2E3032">
     <div style="float:left;width:33%;align:right;"><h3 style="margin-left:148px;background-color:#C4BD97;text-align:center;width:150px;font-size:12px;font-weight:bold;padding:11px 0 11px 0;">Campaign over campaign Impressions</h3></div>

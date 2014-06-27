@@ -415,12 +415,12 @@ ul.tabButtons li a:hover{
 	clear:none;
 	margin:0 0 0 20px	
 }
-#chart1, #chart2{
+/*#chart1, #chart2{
 	width:469px;
 	height:265px;
 	float:left;
 	z-index:-999	
-}
+}*/
 #-gldp{
 	z-index:999	
 }
@@ -813,3 +813,5 @@ padding:25px 15px 12px 30px;;}
 .loginpg .loginpgbg .loginpgcontent .contentright {width:50%;float:left;}
 .login_btn{ height:29px;width:106px;background-image:url("/assets/loginbtn.png");margin-left:1px;border:none;text-decoration:none}
 .loginpg .loginpgbg .loginpgfooter>span {font-size:10px;float:right;color:#bfbfbf;margin-top: 125px;}
+
+.size_font{ font-size: 12px;}
