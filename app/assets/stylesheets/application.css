@@ -757,8 +757,7 @@ padding:25px 15px 12px 30px;;}
 .loginpg .loginpgbg .loginpgcontent {margin-bottom:50px;}
 .loginpg .loginpgbg .loginpgcontent .contentleft {width:35%;float:left;}
 .loginpg .loginpgbg .loginpgcontent .contentleft> span {color:#4f4f4f;font-family:Arial;font-size:11px;}
-.loginpg .loginpgbg .loginpgcontent .contentleft>input[type='text'], .contentleft>input[type='password']{ height:17px width:150px;margin-top:4px;margin-bottom:9px; }
-.loginpg .loginpgbg .loginpgcontent .contentleft>input[type='button'], .loginbtn input{ height:29px;width:106px;background-image:url("/assets/loginbtn.png");margin-left:10px;border:none;text-decoration:none}
+
 .loginpg .loginpgbg .loginpgcontent .contentleft a.loginbtn{text-decoration:none}
 .loginpg .loginpgbg .loginpgcontent .contentleft>a {text-decoration:underline;font-family:Arial;font-size:10px;color:#353334;}
 .loginpg .loginpgbg .loginpgcontent .contentright {width:65%;float:left;}
@@ -807,7 +806,7 @@ padding:25px 15px 12px 30px;;}
 .revisionticket-search {font-size:13px;font-weight:bold;color:#353334;margin-bottom:10px;}
 
 .login_signup  {color:#4f4f4f;font-family:Arial;font-size:11px;}
-.login_signup_text{ height:17px width:150px;margin-top:4px;margin-bottom:9px; }
+.login_signup_text{ height:17px; width:150px;margin-top:4px;margin-bottom:9px; }
 .loginpg .loginpgbg .loginpgheader {margin-bottom:1px;float:left;}
 .loginpg .loginpgbg .loginpgheaderright {margin-bottom:1px;float:right;}
 .loginpg .loginpgbg .loginpgcontent .contentleft {width:50%;float:left;}
