@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DigiSight</title>
+
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+ 
+       <%= render "layouts/messages" %>
+    <div class="loginpg"> <span class="loginpgborderleft"></span> <span class="loginpgbg">
+  <div class="loginpgheader"><img src="/assets/cognizant_logo_DMS.png" alt="cognizant logo" /></div>
+   <div class="loginpgheaderright"><img src="/assets/digilogo.png" alt="Digi-Sight logo" /></div>
+  <div class="clear"></div>
+
+    
+  <div class="loginpgcontent">
+      <div id="user_nav">
+        <% if user_signed_in? %>
+          Signed in as <%= current_user.email %>. Not you?
+             <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
+        <% else %>
+          <%#= link_to "Sign up", new_user_registration_path %>  <%#= link_to "sign in", new_user_session_path %>
+        <% end %>
+      </div>
+      
+    <div class="contentleft">      
+       <%= yield %>
+    </div>
+    <div class="contentright">
+      <div class="welcome">Welcome to DigiSight Portal</div>
+    </div>
+  </div>
+   <div class="loginpgfooter"> <span>Copyright &copy; 2014 Cognizant All Rights Reserved.</span> </div>
+  <div class="clear"></div>
+ 
+  </span> <span class="loginpgborderright"></span> </div>
+
+
+</body>
+</html>

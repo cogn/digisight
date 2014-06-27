@@ -1,0 +1,518 @@
+h4,p,ul,li {
+  margin: 0;
+
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/*common styles*/
+h1, #header ul, .right, li div.info p{float:right;}
+#newTicket .leftcol, #newTicket label, #newTicket input,#newTicket textarea, #newTicket .rightcol, .field img, .field span, .left, #scheduler label, #scheduler .field,#tab1 .field label, #tab1 .field input, #tab2 h4, #tab2 .field label, #tab2 .field input, #tab2 h4, .calendar .field img, .calendar .field input, .calendar .field label, li div.info img{float:left}
+.clear{clear:both}
+/*font styles*/
+p.note{font-size:10px}
+#header li, #topmenu li a, .scheduler th, .scheduler td, #scheduler, #tooltip, #statusblock .ticket, .status div li, #statusblock h3, .highlight_data, .updatebox p, .projectList li, .sopdetails table, #processFlow table, #processFlow .uploadFiles label{font-size:12px}
+#search input, #newTicket label, #newTicket select,#tab1 .field, #tab2 .field, h4, .calendar, #newTicket table tr td, #headings{font-size:13px}
+#topmenu li a, ul.help li, .recent-posts, .projectList h3, #processFlow h3{font-size:14px}
+.updatebox a{font-size:16px}
+#highlights h4, #updates h3{font-size:18px}
+#topmenu li a, #newTicket label, .scheduler th, #scheduler label, h4, .commentspopup label, .recent-posts, #statusblock h3, #statusblock .status, #highlights h4, .highlight_data p, #updates h3, .updatebox a, #headings, .projectList h3, #processFlow h3{font-weight:bold}
+
+/*colors*/
+#header li, #header li a, #search input, #newTicket label, input, #newTicket select, #wrapper, .schedular-inputtable a, .schedular-outputtable a{color:#353334}
+#header h1, ul.help li, ul.help li a{color:#0c7ab5}
+p.note, .field span{color:#F00}
+.scheduler th, #highlights h4, .highlight_data{color:#ffffff}
+.scheduler td, .scheduler td a, #statusblock, #updates h3, .updatebox a, .sopdetails table td a, .projectList li a, #processFlow a{color:#000000}
+
+
+#wrapper{
+  width:958px;
+  margin:16px auto;
+  padding:12px 16px 12px 16px;
+  font-family:Arial, Helvetica, sans-serif;
+  border:1px solid #d3d3d3;
+  border-radius:3px;
+  box-shadow: 1px 1px 3px #eaeaea;
+  background:url(/assets/top_grad.gif) repeat-x top;
+
+}
+#header{
+  width:100%  
+}
+.dpslogo{float:right;width: 140px !important; height:50px !important;}
+
+#header h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+#header .dpslogo{
+  margin-bottom:30px;
+  margin-top:5px
+}
+
+
+
+#header li{
+  list-style-type:none;
+  display:inline;
+  padding:0 8px;
+  border-right:1px solid #353334
+}
+#header li a{text-decoration:none}
+#header li a:hover{text-decoration:underline}
+#header li.last{border:0;padding-right:0}
+
+
+#topmenu{
+  width:960px;
+  height:38px;
+  background:url(/assets/menu_bg.gif) no-repeat;
+  margin:10px 0 28px 0;
+}
+#topmenu li{
+  list-style-type:none;
+  display:inline;
+  float:left;
+  background:url(/assets/menu_partition.gif) no-repeat right top;
+  padding-right:3px
+}
+#topmenu li a{
+  display:inline-block; 
+  padding:11px 18px;
+  text-decoration:none;
+  color:#ffffff 
+}
+#topmenu li.last{
+  background:none
+}
+
+#topmenu li.active{
+  background:url(/assets/menu_bg_hover.gif) repeat-x;  
+}
+#topmenu li a:hover, #topmenu li a.active, #topmenu .dropdown li a:hover{
+  background:url(/assets/menu_bg_hover.gif) repeat-x;  
+}
+#topmenu li.first a:hover, #topmenu li.first a.active{
+  background:url(/assets/dashboard_hover_bg.gif) no-repeat left  
+}
+#topmenu .dropdown li{
+  list-style-type:none;
+  display:block;
+  border: 1px solid #2293d0;
+  background: none repeat scroll 0 0 #50a6d4 !important;
+  border-top:0;
+  border-bottom:1px solid #0c7ab5;
+  float:none;
+  padding:0 
+}
+#topmenu .dropdown li.last{
+  border-radius: 0 0 4px 4px;
+}
+
+#topmenu .dropdown li a{
+  background-image: -moz-linear-gradient(-90deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3) 48%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0));
+  background-image: -webkit-linear-gradient(-90deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3) 48%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0));    
+    color: #FFFFFF;
+    display: block;
+    font-family: arial,sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 28px;
+    text-align:center;
+    text-decoration: none;
+  padding:0
+}
+
+
+#tab1, #tab2, #tab3, #tab4{
+  width:940px;
+  border:1px solid #969696;
+  padding:10px;
+  clear:both;
+  
+}
+#tab2 button.bgcolor,#tab1 button.bgcolor{
+  margin-bottom:0 
+}
+/*ul.tabButtons{
+  padding:0;
+  margin:0;
+}
+ul.tabButtons li.active{
+  border: 1px solid #969696;
+  list-style-type:none;
+  display:inline-block;
+  border-radius: 4px 4px 0px 0px;
+  float:left;
+  margin-left:3px;
+  color: #fff;
+  border-bottom:0;
+  background: none repeat scroll 0 0 #000;
+}
+ul.tabButtons li:hover{
+  background: none repeat scroll 0 0 #000;
+}
+ul.tabButtons li.active a{
+  color:#fff;
+  cursor:default  
+}
+ul.tabButtons li a:hover{
+  color:#fff;
+}
+ul.tabButtons li{
+  border: 1px solid #c0c0c0;
+  background: none repeat scroll 0 0 #cdcdcd;
+  list-style-type:none;
+  display:inline-block;
+  border-radius: 4px 4px 0px 0px;
+  float:left;
+  margin-left:3px;
+  border-bottom:0;
+}
+ul.tabButtons li a{
+  background-image: -moz-linear-gradient(-90deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5) 48%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0)) !important;
+  background-image: -webkit-linear-gradient(-90deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5) 48%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0)) !important; 
+  color:#999;   
+    display: block;
+    float: left;
+    font-family: arial,sans-serif;
+    font-size: 15px;
+    line-height: 28px;
+    padding: 0 23px 0 23px;
+    text-decoration: none 
+}
+ul.tabButtons li a:hover{
+  background-image: -moz-linear-gradient(-90deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5) 48%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0)) !important;
+  background-image: -webkit-linear-gradient(-90deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5) 48%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0)) !important; 
+}
+*/#tab2 button#ok,#tab1 button#ok{
+  clear:none;
+  margin:0 0 0 20px 
+}
+input.submit{
+    background-image: -moz-linear-gradient(-90deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3) 48%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0)) !important;
+  background-image: -webkit-linear-gradient(-90deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3) 48%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0)) !important;
+    border-radius: 4px 4px 4px 4px;
+    color: #FFFFFF;
+    display: block;
+    float: left;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 28px;
+    padding: 0 13px 0 14px;
+    text-decoration: none;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5), 1px 1px 1px #999999; 
+  cursor:pointer;
+  height: 30px;
+  behavior: url(includes/js/PIE.htc);
+}
+input.bgcolor{
+  border: 1px solid #036281;
+  background: none repeat scroll 0 0 #028fbc;
+  clear:both;
+  margin:20px 0 50px 0
+}
+input.bgcolor:hover, input.bgcoloradd:hover, input.bgcolorattach:hover, input.bgcolorcancel:hover, .bgcolorcommentpopup:hover{
+  background: none repeat scroll 0 0 #017da4;
+}
+input.bgcolorattach {border: 1px solid #036281;background: none repeat scroll 0 0 #028fbc;margin:-3px 0 0 4px;}
+
+input.bgcolorcancel {border: 1px solid #036281;background: none repeat scroll 0 0 #028fbc;margin:19px 0 0 10px;}
+
+input.bgcoloradd {border: 1px solid #036281;background: none repeat scroll 0 0 #028fbc;margin-top:19px;}
+
+button.submit{
+    background-image: -moz-linear-gradient(-90deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3) 48%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0)) !important;
+  background-image: -webkit-linear-gradient(-90deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3) 48%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0)) !important;
+    border-radius: 4px 4px 4px 4px;
+    color: #FFFFFF;
+    display: block;
+    float: left;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 28px;
+    padding: 0 13px 0 14px;
+    text-decoration: none;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5), 1px 1px 1px #999999; 
+  cursor:pointer;
+/*  behavior: url(includes/js/PIE.htc);*/
+}
+button.bgcolor{
+  border: 1px solid #036281;
+  background: none repeat scroll 0 0 #028fbc;
+  clear:both;
+  margin:20px 0 50px 0
+}
+button.bgcolor:hover, button.bgcoloradd:hover, button.bgcolorattach:hover, button.bgcolorcancel:hover, .bgcolorcommentpopup:hover{
+  background: none repeat scroll 0 0 #017da4;
+}
+button.bgcolorattach {border: 1px solid #036281;background: none repeat scroll 0 0 #028fbc;margin:-3px 0 0 10px;}
+
+button.bgcolorcancel {border: 1px solid #036281;background: none repeat scroll 0 0 #028fbc;margin:19px 0 0 10px;}
+
+button.bgcoloradd {border: 1px solid #036281;background: none repeat scroll 0 0 #028fbc;margin-top:19px;}
+
+.bgcolorcommentpopup {border: 1px solid #036281;background: none repeat scroll 0 0 #028fbc;margin-right:10px;}
+
+
+#dock {
+    background: url("/assets/dock_bg.jpg") no-repeat scroll center center;
+    height: 300px;
+    left: -17px;
+    margin-bottom: 46px;
+    position: relative;
+    width: 992px;
+}
+
+#icons{
+  width:100%;
+  position:absolute;
+  text-align:center;
+  bottom:80px
+}
+#icons img{
+  margin:0 18px;
+  width:105px 
+}
+#icons a{
+  outline:none;
+  padding: 16px;  
+
+}
+#updates{
+  width:600px;
+  float:left;
+  padding-left:30px 
+}
+#highlights{
+  width:280px;
+  float:right;
+}
+#highlights h4{
+  background:url("/assets/highlights_bg.png") no-repeat top;
+  padding:20px 0 20px 0;
+  text-align:center
+}
+.highlight_data{
+  width:230px;
+  height: 200px;
+  background-color:#598812;
+  padding:1px 8px 25px 22px;
+  margin-left:10px  
+}
+.highlight_data ul{
+  margin-bottom:20px;
+  margin-left:12px;
+  padding: 0px;  
+
+}
+.highlight_data li{
+  margin-top:4px ;
+  padding:0px; 
+}
+.highlights_data p,ul,li{
+
+}
+
+.updatebox{
+  width:250px;
+  float:left;
+  margin:15px 40px 20px 0 ;
+  height: 200px;
+  overflow: auto;
+  
+
+}
+.scroll
+{
+    display: block;
+    border: 1px solid gray;
+    padding: 10px 0px 0px 0px;
+    margin-top: 5px;
+    width: 212px;
+    height: 200px;
+    overflow-y: scroll;
+    background-color: white;
+    margin-left: 15px;
+}
+.updatebox span{
+  
+}
+.updatebox span.one{
+  background:url("/assets/update_icon1.png") no-repeat top left; 
+  padding:14px 0 4px 40px;
+  display:block;
+  text-decoration:none;
+  font-weight: bold;  
+
+}
+
+.updatebox span.two{
+  background:url("/assets/update_icon2.png") no-repeat top left; 
+  padding:14px 0 4px 40px;
+  display:block;
+  text-decoration:none;
+  font-weight: bold;  
+}
+.updatebox span.three{
+  background:url("/assets/update_icon3.png") no-repeat top left; 
+  padding:14px 0 4px 40px;
+  display:block;
+  text-decoration:none;
+  font-weight: bold;  
+}
+.updatebox span.four{
+  background:url("/assets/update_icon4.png") no-repeat top left; 
+ padding:14px 0 4px 40px;
+  display:block;
+  text-decoration:none;
+  font-weight: bold;  
+}
+.updatebox p{
+  margin-top:7px
+}
+#updates h3{
+  margin-bottom:15px
+}
+
+ 
+ .projectList{
+  background-color:#ebebeb;
+  width:200px;
+  float:left;
+  padding:10px  
+}
+.projectList li{
+  list-style-type:none;
+  margin-left:10px;
+  margin-top:5px  
+}
+.projectList ul,li{
+  padding: 0px;
+
+}
+.projectList h3{
+  padding: 0px;
+}
+.sopdetails{
+  width:710px;
+  float:right ;
+    background-color: #EBEBEB;
+}
+#wrapper .sopdetails h4{
+background-color: #2B688A;
+     color: #FFFFFF;
+  padding:7px;
+  width:696px
+}
+#processFlow h3{
+  background-color:#ebebeb;
+  padding:7px;
+
+}
+.sopdetails table{
+  margin:5px 0 10px 35px  
+}
+.sopdetails table td, .sopdetails table th, #processFlow table th, #processFlow table td{
+  border:0;
+  height:26px;
+  vertical-align:middle;
+  text-align:left 
+}
+.scheduler th, #highlights h4, .highlight_data {
+    color: #FFFFFF;
+}
+#highlights h4, #updates h3 {
+    font-size: 18px;
+}
+a.doc, a.pdf, a.xls, a.txt, a.ppt, a.zip{
+  padding:4px 0 4px 25px;
+  text-decoration:none
+}
+a.doc{
+  background:url(/assets/icon_doc.png) no-repeat left center;
+}
+a.pdf{
+  background:url(/assets/icon_pdf.png) no-repeat left center;
+}
+a.xls{
+  background:url(/assets/icon_xls.png) no-repeat left center;
+}
+a.ppt{
+  background:url(/assets/icon_ppt.png) no-repeat left center;
+}
+a.txt{
+  background:url(/assets/icon_txt.png) no-repeat left center;
+}
+a.zip{
+  background:url(/assets/icon_zip.png) no-repeat left center;
+}
+#processFlow table, #processFlow table a{
+  margin-left:15px  
+}
+#processFlow select{
+  width:154px;
+  *width:125px; 
+}
+#processFlow .select-skin{
+  width:125px;
+  background: url(/assets/select_arrow.png) no-repeat scroll 104px 0;
+}
+#processFlow .uploadFiles{
+  width:400px;
+  margin:40px 0 0 28px  
+}
+#processFlow .uploadFiles h4{
+  width:100%;
+  margin-bottom:12px  
+}
+#processFlow .uploadFiles input.filename{
+  width:280px;
+  float:left  
+}
+#processFlow .uploadFiles input.check{
+  width:20px;
+  padding:0 
+}
+#processFlow .uploadFiles .field label{
+  vertical-align:5px;
+  width:360px 
+}
+#processFlow .uploadFiles .field{
+  margin-top:5px;
+  display:inline-block
+}
+#processFlow .uploadFiles .btns{
+  margin:15px 0 15px 194px  
+}
+#footer{
+  width:auto;
+  margin-top:20px
+}
+#footer p{
+  font-size:9px;
+  color:#a4a4a4 
+}
+
+.currentstatus .currentstatustable {border-collapse: collapse; border-spacing:0;background-color:#ffffff;}
+.currentstatus .currentstatustable tr td,th{border:1px solid #dcdcdc;height:30px;}
+.currentstatus .currentstatustable .row1 td{font-size:13px;color:#fff;font-weight:bold;background-color:#2a6687;text-align:center;width:100px;}
+.currentstatus .currentstatustable tr td {height:30px;padding:2px;text-align:center;font-size:12px;color:#252525;}
+.currentstatus .currentstatustable tr th {color:#000;font-size:0.850em;text-align:left;font-weight:bold;width:105px;padding-left:10px;} 
+.header_rsp{
+    text-align: center;margin: 0; padding: 0; border-collapse: collapse;border-bottom-width: 0px;
+     
+}
+.rsp_div{
+   margin: 0; padding: 0; border-collapse: collapse; width: 938px; max-height: 272px;; overflow: hidden;
+ }
+
+ .rsp_table{
+  margin: 0; padding: 0; border-collapse: collapse;  width: 936px; height: 20px; text-align: center; 
+ }

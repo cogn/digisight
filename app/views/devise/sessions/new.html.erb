@@ -1,0 +1,26 @@
+
+<%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+
+  <div class="login_signup"><%= f.label :email %></div>
+
+  <div class="login_signup_text"><%= f.email_field :email ,:size =>"25"%></div>
+
+  <div class="login_signup"><%= f.label :password %></div>
+  <div class="login_signup_text"><%= f.password_field :password ,:size =>"25"%></div>
+
+<div>  
+ Dashboard <%= radio_button_tag 'login_from','dashboard' ,true%>
+
+  KPI Finder <%= radio_button_tag 'login_from','kpi_finder',false%>
+</div>
+
+
+<br/>
+<!--   <% if devise_mapping.rememberable? -%>
+    <div><%= f.check_box :remember_me %> <%= f.label :remember_me %></div>
+  <% end -%> -->
+
+  <div><%= f.submit "Sign in" ,:class=>"login_btn"%></div>
+<% end %>
+
+<%= render "devise/shared/links" %>
