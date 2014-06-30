@@ -21,32 +21,43 @@ position:absolute;
 color:white;
 font-size:24px;
 font-weight:bold;
-left:175px;
+left:190px;
+top:48px;
+}
+.text3
+{
+z-index:100;
+position:absolute;
+color:white;
+font-size:24px;
+font-weight:bold;
+left:156px;
 top:48px;
 }
 </style>
-<div style="width:958px;padding-top:12px;padding-bottom:9px;height:450px;background-color:#2E3032;" >
-<div style="width:600px;float:left;background-color:#2E3032;">
+<div style="float:right;font-size:14px;"><%= link_to 'Back', kpi_finder_path,class:"login_link" %></div>
+<div style="width:958px;padding-top:20px;padding-bottom:9px;height:325px;background-color:#ffffff;" >
+<div style="width:600px;float:left;">
     <h4 style="border-top: 3px solid #948a54; border-bottom: 3px solid #948a54; border-left: 3px solid #948a54; border-right: 3px solid #948a54;background-color:#D9D37E;text-align:center;padding:15px;margin:0px;font-size:15px;">EMAIL CAMPAIGN KPI PERFORMANCE DASHBOARD</h4   >
-<div style="
+<!-- <div style="
 "><img src="/assets/MMR_Dashboard_Campaign_Email_header.png"  width="600px;"></div>
 <div>
  <div style="float:left;width:25%;"><h3 style="background-color:#BF9056;text-align:center;width:130px;font-size:12px;font-weight:bold;padding-top:5px;">EXECUTIVE</h3></div>
 <div style="float:left;width:25%;"><h3 style="background-color:#BF9056;text-align:center;width:130px;font-size:12px;font-weight:bold;padding-top:5px">SOCIAL</h3></div>
  <div style="float:left;width:25%;"><h3 style="background-color:#BF9056;text-align:center;width:130px;font-size:12px;font-weight:bold;padding-top:5px;">SEO</h3></div>
  <div style="float:left;width:25%;"><h3 style="background-color:#BF9056;text-align:center;width:150px;font-size:12px;font-weight:bold;padding:4px 0 4px 0;">WEB</h3></div>
-</div>
+</div> -->
 
 <div >
-<h3 style="clear:both;background-color:#BF9056;text-align:center;font-size:12px;font-weight:bold;padding:2px;clear:both;margin-top:30px;">EMAIL CAMPAIGN TOP</h3></div>
+<h3 style="clear:both;background-color:#BF9056;text-align:center;font-size:12px;font-weight:bold;padding:2px;clear:both;margin-top:6px;">EMAIL CAMPAIGN TOP</h3></div>
 
 
 
 <div style="margin-top:12px;">
- <div style="float:left;padding-right:20px;padding-left:10px;"> <div id="chart1"></div>
+ <div style="float:left;padding-right:20px;padding-left:10px;"> <div style="border:1px solid black;" id="chart1"></div>
 </div>
 <div style="float:left;">
-<div id="chart2"></div></div>
+<div style="border:1px solid black;" id="chart2"></div></div>
 </div>
 
 </div>
@@ -66,44 +77,57 @@ top:48px;
 </div>
 
 <div style="background-color:#C4BD97;padding:13px;">
-<h3 style="background-color:#4F81BD;clear:both;font-size:12px;color:#ffffff;text-align:center;padding:5px;">overall Email Campaign KPI</h3>
+<h3 style="background-color:#4F81BD;clear:both;font-size:12px;color:#ffffff;text-align:center;padding:5px;"><a href="#overall_email_campaign" class="login_link">overall Email Campaign KPI</a></h3>
 </div>
 
 
-<div style="background-color:#C4BD97;margin-left:13px"> <p style="background-color:#4F81BD;float:left;width:150px;font-size:13px;margin-right:32px;text-align:center;color:#ffffff;"> overall  KPI</p><p  style="float:left;width:161px;;background-color:#4F81BD;text-align:center;width:150px;font-size:13px;text-align:center;color:#ffffff;">Response KPI</p>
+<div style="background-color:#C4BD97;margin-left:13px"> <p style="background-color:#4F81BD;float:left;width:150px;font-size:13px;margin-right:32px;text-align:center;color:#ffffff;"> <a href="#deliverykpi" class="login_link" >Delivery  KPI</a></p><p href="#responsekpi" style="float:left;width:161px;;background-color:#4F81BD;text-align:center;width:150px;font-size:13px;text-align:center;color:#ffffff;"><a href="#responsekpi" class="login_link">Response KPI</a></p>
 
 </div>
 
 <div style="background-color:#C4BD97;padding:24px 13px 0 13px;">
-<h3 style="background-color:#4F81BD;font-size:12px;color:#ffffff;text-align:center;padding:5px;">overall Email Campaign KPI</h3>
+<h3 style="background-color:#4F81BD;font-size:12px;color:#ffffff;text-align:center;padding:5px;"><a href="#socialkpi" class="login_link"> Social Media&IVE/Help Center KPI</a></h3>
 </div>
 
-<div style="background-color:#C4BD97;padding-bottom:29px;padding-top:29px;border:3px solid #948a54;">
+<!-- <div style="background-color:#C4BD97;padding-bottom:29px;padding-top:29px;border:3px solid #948a54;">
 
 </div>
-<div  style="background-color:#5C5443;">
+ --><div  style="background-color:#5C5443;">
 <h3 style="background-color:#5C5443;clear:both;font-size:12px;color:#ffffff;margin:0px;">Insights</h3>
-</div>
-
-<div style="background-color:#C4BD97;padding-bottom:66px;padding-top:29px;border:3px solid #948a54;">
 
 </div>
 
+<div style="background-color:#C4BD97;padding-bottom:40px;padding-top:29px;border:3px solid #948a54;font-family:Verdana,Arial,Helvetica,sans-serif; font-size: 14px; ">
 
-<div  style="background-color:#5C5443;">
+ <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();">* Campaign 6 has the 3rd highest CTR% of 2.5%.</br>
+    * Campaign 10 has the 2nd highest ROI % of 193.4%.</br>
+  * Campaign 4 has the highest New Registration of 3343.</br>
+  * Campaign 10 has the 3rd highest Sales Value of $538,914.</br>
+  * Campaign 7 has the 2nd highest New Registration of 3303. </br>
+  * Campaign 10 has the 3rd highest New Registration of 3301.
+ </marquee>
+ <!--  <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();"> Campaign 4 has the highest New Registration of 3343.·     </marquee>
+   <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();">·     Campaign 4 has the highest New Registration of 3343.</marquee>
+    <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();">·    Campaign 10 has the 3rd highest Sales Value of $538,914.</marquee>
+     <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();">·      Campaign 7 has the 2nd highest New Registration of 3303.</marquee>
+      <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();">·     Campaign 10 has the 3rd highest New Registration of 3301.</marquee>
+ --></div>
+
+
+<!-- <div  style="background-color:#5C5443;">
 <h3 style="background-color:#5C5443;clear:both;font-size:12px;color:#ffffff;margin:0px;">Charts</h3>
-</div>
+</div> -->
 
-   <div style="background-color:#C4BD97;padding-bottom:77px;padding-top:29px;border:3px solid #948a54;">
-   </div>
+  <!--  <div style="background-color:#C4BD97;padding-bottom:77px;padding-top:29px;border:3px solid #948a54;">
+   </div> -->
  </div>
 </div>
 
 
-<div style="background-color:#2E3032;padding-top:45px;padding-bottom:9px;"  height="31" >
+<div id="deliverykpi" style="background-color:#ffffff;padding-top:45px;padding-bottom:9px;"  height="31" >
     <h4 style="background-color:#BB9056;font-weight:bold;text-align:center;padding-top:10px;padding-bottom:10px;">Delivery KPIs</h4>
 </div>
-<div style="width:100%;background-color:#2E3032">
+<div style="width:100%;background-color:#ffffff">
     <div style="float:left;width:20%;" class="container"><img id="image"src="/assets/MMR_ Dashboard_Campaign_Email_blue.png"  hspace="42" vspace="18" width="150"> <p class="text">
         94.3%
     </p></div>
@@ -119,17 +143,17 @@ top:48px;
     </p></div>
     <div style="float:left;width:20%;" class="container"><img src="/assets/MMR_ Dashboard_Campaign_Email_blue.png"  hspace="42" vspace="18"  width="150"><p class="text">54142</p></div>
 </div>
-<div style="height:200px;width:100%;background-color:#2E3032">
+<div style="height:200px;width:100%;background-color:#ffffff">
     <div style="float:left;width:20%;align:right;"><h3 style="margin-left:6px;background-color:#4F81BC;text-align:center;width:150px;font-size:12px;font-weight:bold;color:#ffffff;padding:11px 0 11px 0;">Delivery rate</h3></div>
     <div style="float:left;width:20%;"><h3 style="margin-left:6px;background-color:#4F81BC;text-align:center;width:150px;font-size:12px;font-weight:bold;color:#ffffff;padding:11px 0 11px 0;">Soft Bounce rate</h3></div>
     <div style="float:left;width:20%;"><h3 style="margin-left:6px;background-color:#4F81BC;text-align:center;width:150px;font-size:12px;font-weight:bold;color:#ffffff;padding:11px 0 11px 0;">Hard Bounce rate</h3></div>
     <div style="float:left;width:20%;"><h3 style="margin-left:6px;background-color:#4F81BC;text-align:center;width:150px;font-size:12px;font-weight:bold;color:#ffffff;padding:11px 0 11px 0;">Cost Per Impression</h3></div>
     <div style="float:left;width:20%;"><h3 style="margin-left:6px;background-color:#4F81BC;text-align:center;width:150px;font-size:12px;font-weight:bold;color:#ffffff;padding:11px 0 11px 0;">Mailing List Size</h3></div>
 </div>
-<div style="background-color:#2E3032;padding-top:12px;padding-bottom:9px;"  height="31" >
+<div id="responsekpi" style="background-color:#ffffff;padding-top:12px;padding-bottom:9px;"  height="31" > 
     <h4 style="background-color:#BB9056;font-weight:bold;text-align:center;padding-top:10px;padding-bottom:10px;">Response KPIs</h4>
 </div>
-<div style="width:100%;background-color:#2E3032">
+<div style="width:100%;background-color:#ffffff">
     <div style="float:left;width:20%;" class="container"><img src="/assets/MMR_ Dashboard_Campaign_Email_green.png"  hspace="42" vspace="18" width="150">
         <p class="text">
         93.0%
@@ -149,17 +173,17 @@ top:48px;
         3594
     </p></div>
 </div>
-<div style="height:200px;width:100%;background-color:#2E3032">
+<div style="height:200px;width:100%;background-color:#ffffff">
     <div style="float:left;width:20%;align:right;"><h3 style="margin-left:6px;background-color:#00B050;text-align:center;width:150px;font-size:12px;font-weight:bold;color:#ffffff;padding:11px 0 11px 0;">Open Rate</h3></div>
     <div style="float:left;width:20%;"><h3 style="margin-left:6px;background-color:#00B050;text-align:center;width:150px;font-size:12px;font-weight:bold;color:#ffffff;padding:11px 0 11px 0;">Unique Open Rate</h3></div>
     <div style="float:left;width:20%;"><h3 style="margin-left:6px;background-color:#00B050;text-align:center;width:150px;font-size:12px;font-weight:bold;color:#ffffff;padding:11px 0 11px 0;">Marked as Spam Ratio</h3></div>
     <div style="float:left;width:20%;"><h3 style="margin-left:6px;background-color:#00B050;text-align:center;width:150px;font-size:12px;font-weight:bold;color:#ffffff;padding:11px 0 11px 0;">Delete Rate</h3></div>
     <div style="float:left;width:20%;"><h3 style="margin-left:6px;background-color:#00B050;text-align:center;width:150px;font-size:12px;font-weight:bold;color:#ffffff;padding:11px 0 11px 0;">Unread Instances</h3></div>
 </div>
-<div style="background-color:#2E3032;padding-top:12px;padding-bottom:9px;"  height="31" >
+<div  style="background-color:#ffffff;padding-top:12px;padding-bottom:9px;"  height="31" >
     <h4 style="background-color:#BB9056;font-weight:bold;text-align:center;padding-top:10px;padding-bottom:10px;">Landing Page KPIs</h4>
 </div>
-<div style="width:100%;background-color:#2E3032">
+<div style="width:100%;background-color:#ffffff">
     <div style="float:left;width:20%;" class="container"><img src="/assets/MMR_ Dashboard_Campaign_Email_hash.png"  hspace="42" vspace="18" width="150"><p class="text">
         24.8%
     </p></div>
@@ -176,7 +200,7 @@ top:48px;
         34.8%
     </p></div>
 </div>
-<div style="height:200px;width:100%;background-color:#2E3032">
+<div style="height:200px;width:100%;background-color:#ffffff">
     <div style="float:left;width:20%;align:right;"><h3 style="margin-left:6px;background-color:#A6A6A6;text-align:center;width:150px;font-size:12px;font-weight:bold;color:#ffffff;padding:11px 0 11px 0;">Click through rate (CTR)</h3></div>
     <div style="float:left;width:20%;"><h3 style="margin-left:6px;background-color:#A6A6A6;text-align:center;width:150px;font-size:12px;font-weight:bold;color:#ffffff;padding:11px 0 11px 0;">Click-to-deliver rate (CTDR)</h3></div>
     <div style="float:left;width:20%;"><h3 style="margin-left:6px;background-color:#A6A6A6;text-align:center;width:150px;font-size:12px;font-weight:bold;color:#ffffff;padding:11px 0 11px 0;">Bounce Rate 
@@ -185,29 +209,29 @@ top:48px;
 (Landing Page)</h3></div>
     <div style="float:left;width:20%;"><h3 style="margin-left:6px;background-color:#A6A6A6;text-align:center;width:150px;font-size:12px;font-weight:bold;color:#ffffff;padding:11px 0 11px 0;">Depth of Visit</h3></div>
 </div>
-<div style="width:100%;background-color:#2E3032">
+<div style="width:100%;background-color:#ffffff">
     <div class="container" style="float:left;width:33%;"><img src="/assets/MMR_ Dashboard_Campaign_Email_hash.png" style="margin-left:148px;" hspace="42" vspace="18" width="150"><p class="text2">
         8.4%
     </p></div>
     <div class="container" style="float:left;width:33%;"><img src="/assets/MMR_ Dashboard_Campaign_Email_hash.png" style="margin-left:135px;" hspace="42" vspace="18" width="150"><p class="text2">
         1.43%
     </p></div>
-    <div class="container" style="float:left;width:33%;"><img src="/assets/MMR_ Dashboard_Campaign_Email_hash.png"  style="margin-left:104px;" hspace="42" vspace="18"  width="150"><p class="text2">
+    <div class="container" style="float:left;width:33%;"><img src="/assets/MMR_ Dashboard_Campaign_Email_hash.png"  style="margin-left:104px;" hspace="42" vspace="18"  width="150"><p class="text3">
         4.9%
     </p></div>
 </div>
-<div style="height:200px;width:100%;background-color:#2E3032">
+<div style="height:200px;width:100%;background-color:#ffffff">
     <div style="float:left;width:33%;align:right;"><h3 style="margin-left:148px;background-color:#A6A6A6;text-align:center;width:150px;font-size:12px;font-weight:bold;color:#ffffff;padding:11px 0 11px 0;">Exit Rate</h3></div>
     <div style="float:left;width:33%;"><h3 style="margin-left:135px;background-color:#A6A6A6;text-align:center;width:150px;font-size:12px;font-weight:bold;color:#ffffff;padding:11px 0 11px 0;">List Growth</h3></div>
     <div style="float:left;width:33%;"><h3 style="margin-left:104px;background-color:#A6A6A6;text-align:center;width:150px;font-size:12px;font-weight:bold;color:#ffffff;padding:11px 0 11px 0;">Unsubscribe Rate</h3></div>
     
 </div>
-<div style="background-color:#2E3032;padding-top:12px;padding-bottom:9px;width:100%" height="31" >
-    <div style="background-color:#2E3032;padding-top:12px;padding-bottom:9px;float:left;width:69%"><h4 style="background-color:#BB9056;font-weight:bold;text-align:center;padding-top:10px;padding-bottom:10px;">Social Media KPIs</h4></div>
-    <div style="background-color:#2E3032;padding-top:12px;padding-bottom:9px;float:left;width:1%"><h4 style="font-weight:bold;text-align:center;padding-top:10px;padding-bottom:10px;">&nbsp;</h4></div>
-    <div style="background-color:#2E3032;padding-top:12px;padding-bottom:9px;float:left;width:30%"><h4 style="background-color:#BB9056;font-weight:bold;text-align:center;padding-top:10px;padding-bottom:10px;">IVR / HelpCenter KPIs</h4></div>
+<div style="background-color:#ffffff;padding-top:12px;padding-bottom:9px;width:100%" height="31" >
+    <div id="socialkpi" style="background-color:#ffffff;padding-top:12px;padding-bottom:9px;float:left;width:69%"><h4 style="background-color:#BB9056;font-weight:bold;text-align:center;padding-top:10px;padding-bottom:10px;">Social Media KPIs</h4></div>
+    <div style="background-color:#ffffff;padding-top:12px;padding-bottom:9px;float:left;width:1%"><h4 style="font-weight:bold;text-align:center;padding-top:10px;padding-bottom:10px;">&nbsp;</h4></div>
+    <div style="background-color:#ffffff;padding-top:12px;padding-bottom:9px;float:left;width:30%"><h4 style="background-color:#BB9056;font-weight:bold;text-align:center;padding-top:10px;padding-bottom:10px;">IVR / HelpCenter KPIs</h4></div>
 </div>
-<div style="width:100%;background-color:#2E3032">
+<div style="width:100%;background-color:#ffffff">
     <div style="float:left;width:33%;" class="container"><img src="/assets/MMR_ Dashboard_Campaign_Email_orange.png" style="margin-left:148px;" hspace="42" vspace="18" width="150">
     <p class="text2">
         34.8%
@@ -215,20 +239,20 @@ top:48px;
     <div style="float:left;width:33%;" class="container"><img src="/assets/MMR_ Dashboard_Campaign_Email_orange.png" style="margin-left:135px;" hspace="42" vspace="18" width="150"><p class="text2">
         34.8%
     </p></div>
-    <div style="float:left;width:33%;" class="container"><img src="/assets/MMR_ Dashboard_Campaign_Email_blue.png"  style="margin-left:104px;" hspace="42" vspace="18"  width="150"><p class="text2">
+    <div style="float:left;width:33%;" class="container"><img src="/assets/MMR_ Dashboard_Campaign_Email_blue.png"  style="margin-left:104px;" hspace="42" vspace="18"  width="150"><p class="text3">
         34.8%
     </p></div>
 </div>
-<div style="height:304px;width:100%;background-color:#2E3032">
+<div style="height:304px;width:100%;background-color:#ffffff">
     <div style="float:left;width:33%;align:right;"><h3 style="margin-left:148px;background-color:#E06D0F;text-align:center;width:150px;font-size:12px;font-weight:bold;color:#ffffff;padding:11px 0 11px 0;">Share per Impression</h3></div>
     <div style="float:left;width:33%;"><h3 style="margin-left:135px;background-color:#E06D0F;text-align:center;width:150px;font-size:12px;font-weight:bold;color:#ffffff;padding:11px 0 11px 0;">Likes per Impression</h3></div>
     <div style="float:left;width:33%;"><h3 style="margin-left:104px;background-color:#5181BA;text-align:center;width:150px;font-size:12px;font-weight:bold;color:#ffffff;padding:11px 0 11px 0;">Calls per Impression</h3></div>
     
 </div>
-<div style="background-color:#2E3032;padding-top:12px;padding-bottom:9px;"  height="31" >
+<div id="overall_email_campaign" style="background-color:#ffffff;padding-top:12px;padding-bottom:9px;"  height="31" >
     <h4 style="background-color:#BB9056;font-weight:bold;text-align:center;padding-top:10px;padding-bottom:10px;">Email Campaign KPIs</h4>
 </div>
-<div style="width:100%;background-color:#2E3032">
+<div style="width:100%;background-color:#ffffff">
     <div style="float:left;width:20%;" class="container"><img src="/assets/MMR_ Dashboard_Campaign_Email_lignbrown.png"  hspace="42" vspace="18" width="150"><p class="text">
         40.8%
     </p></div>
@@ -245,14 +269,14 @@ top:48px;
         17.6%
     </p></div>
 </div>
-<div style="height:200px;width:100%;background-color:#2E3032">
+<div style="height:200px;width:100%;background-color:#ffffff">
     <div style="float:left;width:20%;align:right;"><h3 style="margin-left:6px;background-color:#C4BD97;text-align:center;width:150px;font-size:12px;font-weight:bold;padding:11px 0 11px 0;">Subscriber Retention Rate</h3></div>
     <div style="float:left;width:20%;"><h3 style="margin-left:6px;background-color:#C4BD97;text-align:center;width:150px;font-size:12px;font-weight:bold;padding:11px 0 11px 0;">Average Economic Value per Email Sent</h3></div>
     <div style="float:left;width:20%;"><h3 style="margin-left:6px;background-color:#C4BD97;text-align:center;width:150px;font-size:12px;font-weight:bold;padding:11px 0 11px 0;">Micro Conversion Rate</h3></div>
     <div style="float:left;width:20%;"><h3 style="margin-left:6px;background-color:#C4BD97;text-align:center;width:150px;font-size:12px;font-weight:bold;padding:11px 0 11px 0;">Macro Conversion Rate</h3></div>
     <div style="float:left;width:20%;"><h3 style="margin-left:6px;background-color:#C4BD97;text-align:center;width:150px;font-size:12px;font-weight:bold;padding:11px 0 11px 0;">Actions Completed</h3></div>
 </div>
-<div style="width:100%;background-color:#2E3032">
+<div style="width:100%;background-color:#ffffff">
     <div style="float:left;width:20%;" class="container"><img src="/assets/MMR_ Dashboard_Campaign_Email_lignbrown.png"  hspace="42" vspace="18" width="150"><p class="text">
         $5,923
     </p></div>
@@ -269,25 +293,25 @@ top:48px;
         78.4%
     </p></div>
 </div>
-<div style="height:200px;width:100%;background-color:#2E3032">
+<div style="height:200px;width:100%;background-color:#ffffff">
     <div style="float:left;width:20%;align:right;"><h3 style="margin-left:6px;background-color:#C4BD97;text-align:center;width:150px;font-size:12px;font-weight:bold;padding:11px 0 11px 0;">CPM (Cost per thousand impression)</h3></div>
     <div style="float:left;width:20%;"><h3 style="margin-left:6px;background-color:#C4BD97;text-align:center;width:150px;font-size:12px;font-weight:bold;padding:11px 0 11px 0;">Leads Generated</h3></div>
     <div style="float:left;width:20%;"><h3 style="margin-left:6px;background-color:#C4BD97;text-align:center;width:150px;font-size:12px;font-weight:bold;padding:11px 0 11px 0;">Total Conversions</h3></div>
     <div style="float:left;width:20%;"><h3 style="margin-left:6px;background-color:#C4BD97;text-align:center;width:150px;font-size:12px;font-weight:bold;padding:11px 0 11px 0;">Site Registrations</h3></div>
     <div style="float:left;width:20%;"><h3 style="margin-left:6px;background-color:#C4BD97;text-align:center;width:150px;font-size:12px;font-weight:bold;padding:11px 0 11px 0;">Site Traffic</h3></div>
 </div>
-<div style="width:100%;background-color:#2E3032">
+<div style="width:100%;background-color:#ffffff">
     <div style="float:left;width:33%;" class="container"><img src="/assets/MMR_ Dashboard_Campaign_Email_lignbrown.png" style="margin-left:148px;" hspace="42" vspace="18" width="150"><p class="text2">
         78.4%
     </p></div>
     <div style="float:left;width:33%;" class="container"><img src="/assets/MMR_ Dashboard_Campaign_Email_lignbrown.png" style="margin-left:135px;" hspace="42" vspace="18" width="150"><p class="text2">
         78.4%
     </p></div>
-    <div style="float:left;width:33%;" class="container"><img src="/assets/MMR_ Dashboard_Campaign_Email_lignbrown.png"  style="margin-left:104px;" hspace="42" vspace="18"  width="150"><p class="text2">
+    <div style="float:left;width:33%;" class="container"><img src="/assets/MMR_ Dashboard_Campaign_Email_lignbrown.png"  style="margin-left:104px;" hspace="42" vspace="18"  width="150"><p class="text3">
         78.4%
     </p></div>
 </div>
-<div style="height:200px;width:100%;background-color:#2E3032">
+<div style="height:200px;width:100%;background-color:#ffffff">
     <div style="float:left;width:33%;align:right;"><h3 style="margin-left:148px;background-color:#C4BD97;text-align:center;width:150px;font-size:12px;font-weight:bold;padding:11px 0 11px 0;">Campaign over campaign Impressions</h3></div>
     <div style="float:left;width:33%;"><h3 style="margin-left:135px;background-color:#C4BD97;text-align:center;width:150px;font-size:12px;font-weight:bold;padding:11px 0 11px 0;">Cost per click (CPC)</h3></div>
     <div style="float:left;width:33%;"><h3 style="margin-left:104px;background-color:#C4BD97;text-align:center;width:150px;font-size:12px;font-weight:bold;padding:11px 0 11px 0;">Drop Off Rate</h3></div>

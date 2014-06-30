@@ -7,15 +7,14 @@ var chart;
             chart: {
                 renderTo: 'chart1',
                 width:280,
-                height:200
-            },
-
-            title: {
-                text: ''
+                height:250
             },
             xAxis: {
                 categories: ['ROI %', 'Conversion Rate', 'Subscription']
             },
+             title: {
+            text: null
+        },
       yAxis:[{
 
                 title: {
@@ -23,30 +22,32 @@ var chart;
                 }
             }
       ],
+
+                legend: {
+                    enabled: false
+                },
             tooltip: {
                 enabled: true,
                formatter: function() {
-                    return '<b>'+ this.series.name +'</b><br/>'+
-                        this.x +': '+this.y +'%'  +'';
+                    return  this.x +': '+this.y +'%'  +'';
                 }
             },
             plotOptions: {
                 series: {
             dataLabels: {
                 enabled: true,
-                format: ' {point.y} '+'%'
+                formatter: function() {
+                    return this.y +'%' ;
+                }
             }
         }
             },
             series: [{
                 type: 'column',
                 name: '',
-                data:[48,20,71]
-            }],
-      legend: {
-                verticalAlign: 'top',
-
-            }
+                data:[20,23,41]
+            }]
+     
         });
     });
 
@@ -56,46 +57,51 @@ var chart;
             chart: {
                 renderTo: 'chart2',
                 width:280,
-                height:200
+                height:250
             },
 
             title: {
-                text: ''
-            },
+    text: '',
+    style: {
+        display: 'none'
+    }
+},
             xAxis: {
                 categories: ['Profit/Email', 'Avg.Rev/email', 'Cost Per Email']
             },
       yAxis:[{
 
                 title: {
-                    text: 'Percentage'
+                    text: 'Dollar'
                 }
             }
       ],
+        legend: {
+                    enabled: false
+                },
             tooltip: {
                 enabled: true,
                 formatter: function() {
-                    return '<b>'+ this.series.name +'</b><br/>'+
-                        this.x +': '+this.y +'%'  +'';
+                    return this.x +': '+this.y +'$'  +'';
                 }
             },
             plotOptions: {
                 series: {
             dataLabels: {
                 enabled: true,
-                format: ' {point.y} '+'%'
+               formatter: function() {
+                    return this.y +'$' ;
+                }
             }
+                       
         }
             },
             series: [{
                 type: 'column',
                 name: '',
-                data:[48,20,71]
-            }],
-      legend: {
-                verticalAlign: 'top',
-
-            }
+                data:[21.30,43.00,21.69]
+            }]
+     
         });
     });
 //chart 1
