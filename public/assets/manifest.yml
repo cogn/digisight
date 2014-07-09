@@ -1,4 +1,14 @@
 ---
+01.svg: 01-4b09ee6517c2fd73e48ff77efac877c0.svg
+01/index.svg: 01-4b09ee6517c2fd73e48ff77efac877c0.svg
+02.svg: 02-07b35dfadae7cc8cfe26a123f9900b8a.svg
+02/index.svg: 02-07b35dfadae7cc8cfe26a123f9900b8a.svg
+03.svg: 03-6d31f421b8a477732a8fbc7ac617ac35.svg
+03/index.svg: 03-6d31f421b8a477732a8fbc7ac617ac35.svg
+04.svg: 04-ef91177e35646329df5097db84dd88e4.svg
+04/index.svg: 04-ef91177e35646329df5097db84dd88e4.svg
+05.svg: 05-996ebeb5711c5747fa1a2fb8c767b9ae.svg
+05/index.svg: 05-996ebeb5711c5747fa1a2fb8c767b9ae.svg
 MMR_ Dashboard_Campaign_Email_blue.png: MMR_ Dashboard_Campaign_Email_blue-d4568efb3bd154fa650d5b3fc3332c2a.png
 MMR_ Dashboard_Campaign_Email_blue/index.png: MMR_ Dashboard_Campaign_Email_blue-d4568efb3bd154fa650d5b3fc3332c2a.png
 MMR_ Dashboard_Campaign_Email_green.png: MMR_ Dashboard_Campaign_Email_green-bdaaa9848edd6fed3b07310bb7680a78.png
@@ -33,6 +43,16 @@ digilogo.png: digilogo-b129a827a228279c0fdb83c11ffa2388.png
 digilogo/index.png: digilogo-b129a827a228279c0fdb83c11ffa2388.png
 dock_bg.jpg: dock_bg-30beea3c6762982a3b1141cffbbe3440.jpg
 dock_bg/index.jpg: dock_bg-30beea3c6762982a3b1141cffbbe3440.jpg
+dock_icon1.png: dock_icon1-ce71045e73b13929ec3256601e9a9e98.png
+dock_icon1/index.png: dock_icon1-ce71045e73b13929ec3256601e9a9e98.png
+dock_icon2.png: dock_icon2-83f97eeee093c16df4e448eeeac0a6f1.png
+dock_icon2/index.png: dock_icon2-83f97eeee093c16df4e448eeeac0a6f1.png
+dock_icon3.png: dock_icon3-0de5af83c2c238bb335895ed86e3f090.png
+dock_icon3/index.png: dock_icon3-0de5af83c2c238bb335895ed86e3f090.png
+dock_icon4.png: dock_icon4-5ad485ba51ea9802df686f6b20aa0e93.png
+dock_icon4/index.png: dock_icon4-5ad485ba51ea9802df686f6b20aa0e93.png
+dock_icon5.png: dock_icon5-4de8519bdd3523a261bbe033ba0e7015.png
+dock_icon5/index.png: dock_icon5-4de8519bdd3523a261bbe033ba0e7015.png
 graphheaderbg.png: graphheaderbg-042cb08b52394f9124bd0279ceddfed8.png
 graphheaderbg/index.png: graphheaderbg-042cb08b52394f9124bd0279ceddfed8.png
 green_dot.png: green_dot-ff9513cbb2dae84ac76a5d3da4f8bb93.png
@@ -79,13 +99,23 @@ top_grad.gif: top_grad-eefd0c12e08329a857f1dfe5eba08927.gif
 top_grad/index.gif: top_grad-eefd0c12e08329a857f1dfe5eba08927.gif
 trash.png: trash-1edbf5281baebe630e3024d004ee739e.png
 trash/index.png: trash-1edbf5281baebe630e3024d004ee739e.png
-application.js: application-f8c5e6d9cb68d33f9e5e89c11b1327b8.js
-application/index.js: application-f8c5e6d9cb68d33f9e5e89c11b1327b8.js
+update_icon1.png: update_icon1-8197788fa0e2353c614126bb842c232f.png
+update_icon1/index.png: update_icon1-8197788fa0e2353c614126bb842c232f.png
+update_icon2.png: update_icon2-2ea2e58f2a4f9aef97c3832fdfa231bb.png
+update_icon2/index.png: update_icon2-2ea2e58f2a4f9aef97c3832fdfa231bb.png
+update_icon3.png: update_icon3-028f17831651e094d45f7744d69a2501.png
+update_icon3/index.png: update_icon3-028f17831651e094d45f7744d69a2501.png
+update_icon4.png: update_icon4-38e9fe8fd378fc6826727e1d86f01020.png
+update_icon4/index.png: update_icon4-38e9fe8fd378fc6826727e1d86f01020.png
+application.js: application-0c5ac7783c74da5916052ae859ed3e9a.js
+application/index.js: application-0c5ac7783c74da5916052ae859ed3e9a.js
 highcharts.js: highcharts-f905583ef27f70513ba8c7121095e052.js
 highcharts/index.js: highcharts-f905583ef27f70513ba8c7121095e052.js
-scripts.js: scripts-bcabb13848b0757a3b8d94dbd07518cc.js
-scripts/index.js: scripts-bcabb13848b0757a3b8d94dbd07518cc.js
-application.css: application-ae29a78983882c690464afdf4a7c9d64.css
-application/index.css: application-ae29a78983882c690464afdf4a7c9d64.css
+jquery.resizeOnApproach.1.0.js: jquery.resizeOnApproach.1.0-d3123ff3e6a680e7e7beecc1327e4d5b.js
+jquery/index.resizeOnApproach.1.0.js: jquery.resizeOnApproach.1.0-d3123ff3e6a680e7e7beecc1327e4d5b.js
+scripts.js: scripts-eb88d02bcf382bc771697b57e36e408b.js
+scripts/index.js: scripts-eb88d02bcf382bc771697b57e36e408b.js
+application.css: application-97b947bc8fc23023c9059d0b8b65d1aa.css
+application/index.css: application-97b947bc8fc23023c9059d0b8b65d1aa.css
 jquery.min.map: jquery.min-e146c025d6a36461812bc97143056bd3.map
 jquery/index.min.map: jquery.min-e146c025d6a36461812bc97143056bd3.map
