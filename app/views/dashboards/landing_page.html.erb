@@ -1,0 +1,73 @@
+<style type="text/css">
+
+.updatebox {
+    float: none;
+    margin: 15px 40px 20px 0;
+    width: 250px;
+}
+</style>
+
+<div id="dock">
+	<div id="icons">
+        <a href="#"><img src="/assets/01.svg" alt="" /></a>        
+        <%= link_to image_tag("02.svg", :border => 0), kpi_finder_path%>        
+        <%= link_to image_tag("03.svg", :border => 0), create_dashboard_path%>
+        <a href="#"><img src="/assets/04.svg" alt="" /></a>
+        <a href="#"><img src="/assets/05.svg" alt="" /></a>
+       
+    </div>	
+</div>
+<div id="content">
+
+	<div id="updates">
+    	
+      <div style="float:left;">
+        <div class="updatebox">
+        	<div class="projectList">
+        <h3>My Recent Dashboard</h3>
+        <ul>
+          <li>“Quarterly digital performance dashboard for CMO”</li>
+          <li>Weekly sales through search dashboard</li>
+          <li>Monthly campaign ROI dashboard</li>
+         
+        </ul>        
+      </div>
+          
+        </div>
+        
+        
+    </div>
+    <div style="float:left;"> 
+       
+     <div class="updatebox">
+            <a href="#" class="one">Recent Activity</a>
+              <p>Review brand guidelines V2 for new updates.</p>
+        </div>
+        <div class="updatebox">
+            <a href="#" class="two">Other Updates 02</a>
+            <p>Review brand guidelines V2 for new updates.</p>
+        </div>
+</div>
+    </div>
+    <div id="highlights">
+    	<h4>News & Updates</h4>
+        <div class="highlight_data">
+        	<p>August 20th</p>
+            <ul>
+            	<li>New training module released in KMT</li>
+                <li>Quality report generated for Quarter2</li>
+            </ul>
+            <p>August 19th</p>
+            <ul>
+            	<li>Released Version 20 for Studio Online</li>
+            </ul>
+        </div>
+    </div>
+
+  <div class="clear"></div>
+ 
+</div>
+<script type="text/javascript">
+$('#icons img').resizeOnApproach();
+
+</script>

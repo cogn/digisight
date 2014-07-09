@@ -7,9 +7,13 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>DigiSight</title>
     <%= stylesheet_link_tag    "application", :media => "all" %>
-   <%= javascript_include_tag "application" %>
-  <%= javascript_include_tag "highcharts" %>
-    <%= javascript_include_tag "scripts" %>
+        <%= javascript_include_tag "application" %> 
+     <%= javascript_include_tag "jquery.resizeOnApproach.1.0" %>
+
+
+
+  <%#= javascript_include_tag "highcharts" %>
+    <%#= javascript_include_tag "scripts" %>
      <%= csrf_meta_tags %>
     <%= yield(:head) %>
 </head>
@@ -22,6 +26,7 @@
   <div class="clear"></div>
   <ul>    
       <li> Welcome Admin </b>&nbsp;</li>
+      <li> <%= link_to('Home', landing_page_path) %>&nbsp;</li>
 
       <li class="last">  <%= link_to('Logout', destroy_user_session_path, method: :delete) %></li>
     </ul>

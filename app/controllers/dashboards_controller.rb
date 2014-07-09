@@ -7,4 +7,12 @@ class DashboardsController < ApplicationController
 	def campaign_email
 		
 	end
+	def landing_page
+		
+	end
+
+	def create_dashboard
+		
+	end
 end
+

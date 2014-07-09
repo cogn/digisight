@@ -8,11 +8,12 @@ class ApplicationController < ActionController::Base
   end
 
   def after_sign_in_path_for(resource)
-  	if params[:login_from] == "kpi_finder"
-  		kpi_finder_path
-    else
-        campaign_email_path
-    end
+  	# if params[:login_from] == "kpi_finder"
+  	# 	kpi_finder_path
+   #  else
+   #      campaign_email_path
+   #  end
+   landing_page_path
   end
 
    protected
