@@ -1,3 +1,5 @@
+
+
 $(document).ready(function(){
           $("#tab1").show();
 $(".tab1link").click(function(){
@@ -147,11 +149,219 @@ var chart;
             
     });
 
+var chart;
+    $(document).ready(function() {
+        
+     chart = new Highcharts.Chart({
+            chart: {
+                 renderTo: 'graph3',
+                type: 'column',
+                  width:570 ,
+                height:350
+            },
+            title: {
+                text: 'Vendor Partner  - CTR%'
+            },
+            xAxis: {
+                categories: ['3-May-13','10-May-13','17-May-13','24-May-13','31-May-13','7-Jun-13','14-Jun-13','21-Jun-13','28-Jun-13']
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: 'CTR'
+                }
+            },
+            tooltip: {
+                formatter: function() {
+                    return '<b>'+ this.x +'</b><br/>'+
+                        this.series.name +': '+ this.y+'%' +'<br/>'+
+                        'Total: '+ this.point.stackTotal;
+                }
+            },
+            plotOptions: {
+                column: {
+                    stacking: 'normal',
+                    dataLabels: {
+                        enabled: true,
+                        color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white',
+                        style: {
+                            textShadow: '0 0 3px black, 0 0 3px black'
+                        },
+                        formatter: function() {
+                    return this.y+'%' ;
+                }
+                    }
+                }
+            },
+            series: [{
+                name: 'Vendor Partner 01',
+                data: [0.2,0.0,0.1,0.1,0.2,0.1,0.1,0.1,0.0]
+            }, {
+                name: 'Vendor Partner 02',
+                data: [4.2,5.4,2.7,1.8,0.4,4.4,3.8,3.7,4.2]
+            }, {
+                name: 'Vendor Partner 03',
+                data: [0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,4.0]
+            }, {
+                name: 'Vendor Partner 04',
+                data: [1.8,0.4,4.4,3.8,3.7,4.2,5.2,2.5,0.1]
+            }, {
+                name: 'Vendor Partner 05',
+                data: [0.1,0.2,0.1,0.1,0.1,0.0,0.0,8.2,21.0]
+            }, {
+                name: 'Vendor Partner 06',
+                data: [1.8,0.4,4.4,3.8,3.7,4.2,0.1,0.1,0.1]
+            }]
+        });
+            
+    });
+
+
+var chart;
+    $(document).ready(function() {
+        
+     chart = new Highcharts.Chart({
+    chart: {
+                 renderTo: 'graph4',
+                type: 'column',
+                  width:570 ,
+                height:350
+            },
+            title: {
+                text: 'Total Spends - Campaignwise'
+            },
+            xAxis: {
+                categories: [
+                     '3-May-13',
+                    '10-May-13',
+                    '17-May-13',
+                    '24-May-13',
+                    '31-May-13',
+                    '7-Jun-13',
+                    '14-Jun-13',
+                    '21-Jun-13',
+                    '28-Jun-13'
+                ]
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: 'Campaignwise'
+                }
+            },
+            tooltip: {
+                headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                    '<td style="padding:0"><b>${point.y} </b></td></tr>',
+                footerFormat: '</table>',
+                shared: true,
+                useHTML: true
+            },
+            plotOptions: {
+                column: {
+                    pointPadding: 0.2,
+                    borderWidth: 0
+                }
+            },
+            series: [{
+                name: 'Campaign 01',
+                data: [ 7170 ,5451,30,979,15,054,0,0,0,]
+    
+            }, {
+                name: 'Campaign 02',
+                data: [ 0,0,0,0,20526 ,14672,14377,11498,16742]
+    
+            }, {
+                name: 'Campaign 03',
+                data: [11706,8544,0,0,0,0,0,0,12358]
+    
+            }, {
+                name: 'Campaign 04',
+                data: [15461,12419,22589,23223,17606,28654,26906,25065,14741]
+    
+            }]
+        });
+            
+    });
 
 
 
+var chart;
+    $(document).ready(function() {
+        
+     chart = new Highcharts.Chart({
+    chart: {
+                renderTo: 'graph5',
+                type: 'column',
+                  width:570 ,
+                height:350
+            },
+            title: {
+                text: 'Vendor Partner  - Digital Spends , Impressions & CTR%'
+            },
+            xAxis: {
+                categories: ['Total Cost', 'Impressions', 'CTR']
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: 'Percentage'
+                },
+                stackLabels: {
+                    enabled: true,
+                    style: {
+                        fontWeight: 'bold',
+                        color: (Highcharts.theme && Highcharts.theme.textColor) || 'gray'
+                    }
+                }
+            },
+           
+            tooltip: {
+                formatter: function() {
+                    return '<b>'+ this.x +'</b><br/>'+
+                        this.series.name +': '+ this.y +'<br/>'+
+                        'Total: '+ this.point.stackTotal;
+                }
+            },
+            plotOptions: {
+                column: {
+                    stacking: 'normal',
+                    dataLabels: {
+                        enabled: true,
+                        color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white',
+                        style: {
+                            textShadow: '0 0 3px black, 0 0 3px black'
+                        }
+                    }
+                }
+            },
+            series: [{
 
-
+                 
+            
+                name: 'Vendor Partner 01',
+                data: [115258.87,6211812,2.6]
+            }, {
+                name: 'Vendor Partner 02',
+                data: [59455.42,868387,3.1]
+            }, {
+                name: 'Vendor Partner 03',
+                data: [107920.24,1991547,1.9]
+            }, {
+                name: 'Vendor Partner 04',
+                data: [74193.38,1348303,2.0]
+            }
+                     , {
+                name: 'Vendor Partner 05',
+                data: [86694.71,1151728,3.6]
+            }, {
+                name: 'Vendor Partner 06',
+                data: [82433.04,1454921,1.5]
+            }
+                    ]
+        });
+            
+    });
 
 
 var chart;
