@@ -68,6 +68,8 @@ DigiSight::Application.routes.draw do
 
     match '/kpi_finder', :controller => 'dashboards', :action => 'kpi_finder', :via => [:get]
     match '/campaign_email', :controller => 'dashboards', :action => 'campaign_email', :via => [:get]
+     match '/design_campaign', :controller => 'dashboards', :action => 'design_campaign', :via => [:get]
+
     match '/landing_page', :controller => 'dashboards', :action => 'landing_page', :via => [:get]
     match '/create_dashboard', :controller=>"dashboards",:action => "create_dashboard",:via =>[:get]
  

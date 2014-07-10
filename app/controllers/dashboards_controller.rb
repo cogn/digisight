@@ -14,5 +14,9 @@ class DashboardsController < ApplicationController
 	def create_dashboard
 		
 	end
+
+	def design_campaign
+		
+	end
 end
 
