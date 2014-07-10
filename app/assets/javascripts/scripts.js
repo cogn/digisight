@@ -21,13 +21,10 @@ var chart;
                 allowPointSelect: true,
                 cursor: 'pointer',
                 dataLabels: {
-                    enabled: false,
+                    enabled: false
 
-                    pointFormat: '{series.name}: <b>{point.y}%</b>',
-                    style: {
-                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
-                    }
-                }
+                    
+                },showInLegend: true
             }
         },
         series: [{
@@ -77,7 +74,7 @@ var chart;
                     style: {
                         color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
                     }
-                }
+                },showInLegend: true
             }
         },
         series: [{
@@ -129,7 +126,7 @@ var chart;
                     style: {
                         color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
                     }
-                }
+                },showInLegend: true
             }
         },
         series: [{
