@@ -1,3 +1,160 @@
+var chart;
+    $(document).ready(function() {
+          chart = new Highcharts.Chart({
+      chart: {
+        renderTo: 'pie3',
+        width:300,
+        height:250,
+            plotBackgroundColor: null,
+            plotBorderWidth: 1,//null,
+            plotShadow: false
+        },
+        title: {
+            text: 'Total Cost'
+        }
+        ,
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.y}%</b>'
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: false,
+
+                    pointFormat: '{series.name}: <b>{point.y}%</b>',
+                    style: {
+                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                    }
+                }
+            }
+        },
+        series: [{
+            type: 'pie',
+            name: 'Total Cost',
+            data: [
+                ['Vendor Partner 01',   115258.87],
+                ['Vendor Partner 02',   59455.42],                
+                ['Vendor Partner 03',    107920.24],
+                ['Vendor Partner 04',     74193.38],
+                ['Vendor Partner 05',   86694.71],
+                ['Vendor Partner 06',   82433.04],
+            ]
+        }]
+        });
+     
+            
+    });
+
+
+var chart;
+    $(document).ready(function() {
+          chart = new Highcharts.Chart({
+      chart: {
+        renderTo: 'pie2',
+        width:300,
+        height:250,
+            plotBackgroundColor: null,
+            plotBorderWidth: 1,//null,
+            plotShadow: false
+        },
+        title: {
+            text: 'Impressions'
+        }
+        ,
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.y}%</b>'
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: false,
+
+                    pointFormat: '{series.name}: <b>{point.y}%</b>',
+                    style: {
+                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                    }
+                }
+            }
+        },
+        series: [{
+            type: 'pie',
+            name: 'Impressions',
+            data: [
+                ['Vendor Partner 01',   6211812],
+                ['Vendor Partner 02',   3868387],                
+                ['Vendor Partner 03',    1991547],
+                ['Vendor Partner 04',     1348303],
+                ['Vendor Partner 05',   1151728],
+                ['Vendor Partner 06',   1454921],
+            ]
+        }]
+        });
+     
+            
+    });
+
+
+
+
+var chart;
+    $(document).ready(function() {
+          chart = new Highcharts.Chart({
+      chart: {
+        renderTo: 'pie1',
+        width:300,
+        height:250,
+            plotBackgroundColor: null,
+            plotBorderWidth: 1,//null,
+            plotShadow: false
+        },
+        title: {
+            text: 'CTR'
+        }
+        ,
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.y}%</b>'
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: false,
+
+                    pointFormat: '{series.name}: <b>{point.y}%</b>',
+                    style: {
+                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                    }
+                }
+            }
+        },
+        series: [{
+            type: 'pie',
+            name: 'CTR',
+            data: [
+                ['Vendor Partner 01',   2.6],
+                ['Vendor Partner 02',   3.1],                
+                ['Vendor Partner 03',    1.8],
+                ['Vendor Partner 04',     2.0],
+                ['Vendor Partner 05',   3.6],
+                ['Vendor Partner 06',   1.5],
+            ]
+        }]
+        });
+     
+            
+    });
+
+
+
+
+
+
+
 
 
 $(document).ready(function(){
@@ -51,7 +208,7 @@ var chart;
                 column: {
                     stacking: 'normal',
                     dataLabels: {
-                        enabled: true,
+                        enabled: false,
                         color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white',
                         style: {
                             textShadow: '0 0 3px black, 0 0 3px black'
@@ -118,7 +275,7 @@ var chart;
                 column: {
                     stacking: 'normal',
                     dataLabels: {
-                        enabled: true,
+                        enabled: false,
                         color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white',
                         style: {
                             textShadow: '0 0 3px black, 0 0 3px black'
@@ -182,7 +339,7 @@ var chart;
                 column: {
                     stacking: 'normal',
                     dataLabels: {
-                        enabled: true,
+                        enabled: false,
                         color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white',
                         style: {
                             textShadow: '0 0 3px black, 0 0 3px black'
@@ -337,7 +494,9 @@ var chart;
             },
             series: [{
 
-                 
+                  stacking: 'percent', // 'normal'
+            groupPadding: 0,
+            pointPadding: 0,
             
                 name: 'Vendor Partner 01',
                 data: [115258.87,6211812,2.6]
@@ -362,6 +521,9 @@ var chart;
         });
             
     });
+
+
+
 
 
 var chart;
