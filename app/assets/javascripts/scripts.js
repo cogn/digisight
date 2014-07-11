@@ -476,7 +476,7 @@ var chart;
             plotShadow: false
         },
         title: {
-            text: 'Vendorwise -CTR'
+            text: 'Vendorwise -CTR%'
         }
         ,
         tooltip: {
