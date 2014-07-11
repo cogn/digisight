@@ -377,7 +377,7 @@ var chart;
             plotShadow: false
         },
         title: {
-            text: 'Total Cost'
+            text: 'Vendorwise -Total Cost'
         }
         ,
         tooltip: {
@@ -396,7 +396,7 @@ var chart;
         },
         series: [{
             type: 'pie',
-            name: 'Total Cost',
+            name: 'Vendorwise -Total Cost',
             data: [
                 ['Vendor Partner 01',   115258.87],
                 ['Vendor Partner 02',   59455.42],                
@@ -424,7 +424,7 @@ var chart;
             plotShadow: false
         },
         title: {
-            text: 'Impressions'
+            text: 'Vendorwise -Impressions'
         }
         ,
         tooltip: {
@@ -446,7 +446,7 @@ var chart;
         },
         series: [{
             type: 'pie',
-            name: 'Impressions',
+            name: 'Vendorwise -Impressions',
             data: [
                 ['Vendor Partner 01',   6211812],
                 ['Vendor Partner 02',   3868387],                
@@ -476,7 +476,7 @@ var chart;
             plotShadow: false
         },
         title: {
-            text: 'CTR'
+            text: 'Vendorwise -CTR'
         }
         ,
         tooltip: {
@@ -498,7 +498,7 @@ var chart;
         },
         series: [{
             type: 'pie',
-            name: 'CTR',
+            name: 'Vendorwise -CTR',
             data: [
                 ['Vendor Partner 01',   2.6],
                 ['Vendor Partner 02',   3.1],                
