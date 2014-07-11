@@ -235,7 +235,7 @@ var chart;
                 type: 'column'
             },
             title: {
-                text: 'Sales Mix Value%'
+                text: 'Sales Mix Value'
             },
             xAxis: {
                 categories: ['campaign 1', 'campaign2', 'campaign 3', 'campaign 4']
@@ -243,7 +243,7 @@ var chart;
             yAxis: {
                 min: 0,
                 title: {
-                    text: 'Sales Mix%'
+                    text: 'Sales Mix Value($)'
                 },
                 stackLabels: {
                     enabled: false,
@@ -311,7 +311,7 @@ var chart;
             yAxis: {
                 min: 0,
                 title: {
-                    text: 'Sales %'
+                    text: 'Sales Mix(%)'
                 },
                 stackLabels: {
                     enabled: false,
