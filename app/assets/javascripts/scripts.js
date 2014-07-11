@@ -1,5 +1,372 @@
+
 var chart;
     $(document).ready(function() {
+          chart = new Highcharts.Chart({
+      chart: {
+        renderTo: 'Executivepie1',
+        width:300,
+        height:250,
+            plotBackgroundColor: null,
+            plotBorderWidth: 1,//null,
+            plotShadow: false
+        },
+        title: {
+            text: 'Vendorwise -CTR%'
+        }
+        ,
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.y}%</b>'
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: false,
+
+                    pointFormat: '{series.name}: <b>{point.y}%</b>',
+                    style: {
+                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                    }
+                },showInLegend: true
+            }
+        },
+        series: [{
+            type: 'pie',
+            name: 'Vendorwise -CTR',
+            data: [
+                ['Vendor Partner 01',   2.6],
+                ['Vendor Partner 02',   3.1],                
+                ['Vendor Partner 03',    1.8],
+                ['Vendor Partner 04',     2.0],
+                ['Vendor Partner 05',   3.6],
+                ['Vendor Partner 06',   1.5],
+            ]
+        }]
+        });
+     
+            
+    });
+
+
+
+
+var chart;
+        $(document).ready(function() {
+          chart = new Highcharts.Chart({
+      chart: {
+        renderTo: 'Executivepie3',
+        width:300,
+        height:250,
+            plotBackgroundColor: null,
+            plotBorderWidth: 1,//null,
+            plotShadow: false
+        },
+        title: {
+            text: 'Vendorwise - Total Cost'
+        }
+        ,
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.y}%</b>'
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: false
+
+                    
+                },showInLegend: true
+            }
+        },
+        series: [{
+            type: 'pie',
+            name: 'Vendorwise -Total Cost',
+            data: [
+                ['Vendor Partner 01',   115258.87],
+                ['Vendor Partner 02',   59455.42],                
+                ['Vendor Partner 03',    107920.24],
+                ['Vendor Partner 04',     74193.38],
+                ['Vendor Partner 05',   86694.71],
+                ['Vendor Partner 06',   82433.04],
+            ]
+        }]
+        });
+     
+            
+    });
+
+
+var chart;
+    $(document).ready(function() {
+          chart = new Highcharts.Chart({
+      chart: {
+        renderTo: 'Executivepie2',
+        width:300,
+        height:250,
+            plotBackgroundColor: null,
+            plotBorderWidth: 1,//null,
+            plotShadow: false
+        },
+        title: {
+            text: 'Vendorwise - Impressions'
+        }
+        ,
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.y}%</b>'
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: false,
+
+                    pointFormat: '{series.name}: <b>{point.y}%</b>',
+                    style: {
+                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                    }
+                },showInLegend: true
+            }
+        },
+        series: [{
+            type: 'pie',
+            name: 'Vendorwise -Impressions',
+            data: [
+                ['Vendor Partner 01',   6211812],
+                ['Vendor Partner 02',   3868387],                
+                ['Vendor Partner 03',    1991547],
+                ['Vendor Partner 04',     1348303],
+                ['Vendor Partner 05',   1151728],
+                ['Vendor Partner 06',   1454921],
+            ]
+        }]
+        });
+     
+            
+    });
+
+
+
+
+
+
+
+
+
+
+var chart;
+    
+    $(document).ready(function() {
+        
+     chart = new Highcharts.Chart({
+            chart: {
+                 renderTo: 'execuitive3',
+                type: 'column',
+                  width:570 ,
+                height:350
+            },
+            title: {
+                text: 'Vendor Partner  - CTR%'
+            },
+            xAxis: {
+                categories: ['3-May-13','10-May-13','17-May-13','24-May-13','31-May-13','7-Jun-13','14-Jun-13','21-Jun-13','28-Jun-13']
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: 'CTR'
+                }
+            },
+            tooltip: {
+                formatter: function() {
+                    return '<b>'+ this.x +'</b><br/>'+
+                        this.series.name +': '+ this.y+'%' +'<br/>'+
+                        'Total: '+ this.point.stackTotal;
+                }
+            },
+            plotOptions: {
+                column: {
+                    stacking: 'normal',
+                    dataLabels: {
+                        enabled: false,
+                        color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white',
+                        style: {
+                            textShadow: '0 0 3px black, 0 0 3px black'
+                        },
+                        formatter: function() {
+                    return this.y+'%' ;
+                }
+                    }
+                }
+            },
+            series: [{
+                name: 'Vendor Partner 01',
+                data: [0.2,0.0,0.1,0.1,0.2,0.1,0.1,0.1,0.0]
+            }, {
+                name: 'Vendor Partner 02',
+                data: [4.2,5.4,2.7,1.8,0.4,4.4,3.8,3.7,4.2]
+            }, {
+                name: 'Vendor Partner 03',
+                data: [0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,4.0]
+            }, {
+                name: 'Vendor Partner 04',
+                data: [1.8,0.4,4.4,3.8,3.7,4.2,5.2,2.5,0.1]
+            }, {
+                name: 'Vendor Partner 05',
+                data: [0.1,0.2,0.1,0.1,0.1,0.0,0.0,8.2,21.0]
+            }, {
+                name: 'Vendor Partner 06',
+                data: [1.8,0.4,4.4,3.8,3.7,4.2,0.1,0.1,0.1]
+            }]
+        });
+            
+    });
+
+
+var chart;
+    $(document).ready(function() {
+          chart = new Highcharts.Chart({
+       chart: {
+         renderTo: 'execuitive2',
+         width:570 ,
+                height:350,
+                type: 'column'
+            },
+            title: {
+                text: 'Sales Mix Value%'
+            },
+            xAxis: {
+                categories: ['campaign 1', 'campaign2', 'campaign 3', 'campaign 4']
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: 'Sales Mix%'
+                },
+                stackLabels: {
+                    enabled: false,
+                    style: {
+                        fontWeight: 'bold',
+                        color: (Highcharts.theme && Highcharts.theme.textColor) || 'gray'
+                    }
+                }
+            },
+            tooltip: {
+                formatter: function() {
+                    return '<b>'+ this.x +'</b><br/>'+
+                        this.series.name +': '+ this.y +'$'+'<br/>'+
+                        'Total: '+ this.point.stackTotal;
+                }
+            },
+            plotOptions: {
+                column: {
+                    stacking: 'normal',
+                    dataLabels: {
+                        enabled: false,
+                        color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white',
+                        style: {
+                            textShadow: '0 0 3px black, 0 0 3px black'
+                        }
+                    }
+                }
+            },
+            series: [{
+                name: 'Q1',
+                data: [181639 , 154418 , 118374 , 119841 ]
+            }, {
+                name: 'Q2',
+                data: [125935 ,202573 ,100528 ,183163 ]
+            }, {
+                name: 'Q3',
+                data: [179704 , 112844 , 111825 ,211478 ]
+            }]
+        });
+     
+            
+    });
+
+
+
+
+
+
+
+var chart;
+    $(document).ready(function() {
+          chart = new Highcharts.Chart({
+        chart: {
+             renderTo: 'execuitive1',
+         width:570 ,
+                height:350,
+                type: 'column'
+            },
+            title: {
+                text: 'Sales Mix %'
+            },
+            xAxis: {
+                categories: ['campaign 1', 'campaign2', 'campaign 3', 'campaign 4']
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: 'Sales %'
+                },
+                stackLabels: {
+                    enabled: false,
+                    style: {
+                        fontWeight: 'bold',
+                        color: (Highcharts.theme && Highcharts.theme.textColor) || 'gray'
+                    }
+                }
+            },
+            tooltip: {
+                formatter: function() {
+                    return '<b>'+ this.x +'</b><br/>'+
+                        this.series.name +': '+ this.y +'%'+'<br/>'+
+                        'Total: '+ this.point.stackTotal;
+                }
+            },
+            plotOptions: {
+                column: {
+                    stacking: 'normal',
+                    dataLabels: {
+                        enabled: false,
+                        color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white',
+                        style: {
+                            textShadow: '0 0 3px black, 0 0 3px black'
+                        }
+                    }
+                }
+            },
+            series: [{
+                name: 'Q1',
+                data: [29,18,18,34]
+            }, {
+                name: 'Q2',
+                data: [21,33,16,30]
+            }, {
+                name: 'Q3',
+                data: [32, 27,21,21]
+            }]
+        });
+     
+            
+    });
+
+
+
+
+
+
+
+
+
+
+
+var chart;
+        $(document).ready(function() {
           chart = new Highcharts.Chart({
       chart: {
         renderTo: 'pie3',
