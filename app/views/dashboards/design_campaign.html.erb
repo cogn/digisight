@@ -11,38 +11,13 @@
   </div> -->
   <style type="text/css">
 
-#dock {
-    background: url("/assets/dock_bg.jpg") no-repeat scroll center center rgba(0, 0, 0, 0);
-    height: 155px;
-    left: -17px;
-    margin-bottom: 46px;
-    position: relative;
-    width: 990px;
-}
 
-#icons {
-    bottom: 80px;
-position: static;
-    text-align: center;
-    width: 100%;
-}
-#icons img {
-    margin: 0 18px;
-    padding: 27px;
-    width: 82px;
-}
-#topmenu {
-    background: url("/assets/menu_bg.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
-    height: 38px;
-    margin: 10px 0 11px;
-    width: 960px;
-}
   </style>
 
 <div style="margin-top:10px;">
 <div id="dock">
   <div id="icons">
-        <%= link_to image_tag("01.svg", :border => 0), design_campaign_path%>     
+        <%= link_to image_tag("mapping.png", :border => 0), design_campaign_path%>     
         <%= link_to image_tag("02.svg", :border => 0), kpi_finder_path%>
            <%= link_to image_tag("03.svg", :border => 0), create_dashboard_path%>
         <a href="#"><img src="/assets/04.svg" alt="" /></a>
@@ -52,13 +27,13 @@ position: static;
 </div>
 <div id="topmenu">
   <ul>
-    <li class="first"><a href="#" class="active">Design</a></li>
+    <li class="first"><a href="#" class="active">Map</a></li>
 
-    <li><a href="#">Option Text</a></li>
-    <li><a href="#">Option Text</a></li>
-    <li><a href="#">Option Text</a></li>
-    <li><a href="#">Option Text</a></li>
-    <li class="last"><a href="#">Option Text </a></li>
+    <li><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+    <li><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+    <li><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+    <li><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+    <li class="last"><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
   </ul>
  
 </div>
@@ -67,3 +42,7 @@ position: static;
 </div>
 
 </div>
+<script type="text/javascript">
+$('#icons img').resizeOnApproach();
+
+</script>

@@ -11,32 +11,7 @@
   </div> -->
   <style type="text/css">
 
-#dock {
-    background: url("/assets/dock_bg.jpg") no-repeat scroll center center rgba(0, 0, 0, 0);
-    height: 155px;
-    left: -17px;
-    margin-bottom: 46px;
-    position: relative;
-    width: 990px;
-}
 
-#icons {
-    bottom: 80px;
-position: static;
-    text-align: center;
-    width: 100%;
-}
-#icons img {
-    margin: 0 18px;
-    padding: 27px;
-    width: 82px;
-}
-#topmenu {
-    background: url("/assets/menu_bg.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
-    height: 38px;
-    margin: 10px 0 11px;
-    width: 960px;
-}
 
 .login_link {
     color: #000000;
@@ -48,7 +23,7 @@ position: static;
 <div style="margin-top:10px;">
 <div id="dock">
   <div id="icons">
-         <%= link_to image_tag("01.svg", :border => 0), design_campaign_path%>         
+         <%= link_to image_tag("mapping.png", :border => 0), design_campaign_path%>         
         <%= link_to image_tag("02.svg", :border => 0), kpi_finder_path%>
                <%= link_to image_tag("03.svg", :border => 0), create_dashboard_path%>
         <a href="#"><img src="/assets/04.svg" alt="" /></a>
@@ -58,22 +33,25 @@ position: static;
 </div>
 <div id="topmenu">
   <ul>
-    <li class="first"><a href="#" class="active">Campaign1</a></li>
+    <li class="first"><a href="#" class="active">CAMPAIGN 1</a></li>
 
+    <li><a href="#">CAMPAIGN 2</a></li>
+    <li><a href="#">CAMPAIGN 3</a></li>
+    <!--<li><a href="#">Option Text</a></li>
     <li><a href="#">Option Text</a></li>
-    <li><a href="#">Option Text</a></li>
-    <li><a href="#">Option Text</a></li>
-    <li><a href="#">Option Text</a></li>
-    <li class="last"><a href="#">Option Text </a></li>
+    <li class="last"><a href="#">Option Text </a></li>-->
   </ul>
  
 </div>
- <ul class="tabButtons">
-      <li class="active"><a href="#" class="tab1link">Online Display</a></li>
-      <li><a href="#" class="tab2link">Execuitve</a></li>
+<ul class="tabButtons">
+      
+      <li class="active"><a href="#" class="tab2link">Execuitve</a></li>
+      <li><a href="#" class="tab1link">Online Display</a></li>
+      <!--<li><a href="#" class="tab3link">Email</a></li>
+      <li><a href="#" class="tab4link">Search</a></li>-->
     </ul>
  <div id="tab1" style="height:1600px;">
-   <div style="width:650px;height:45px;">
+   <div style="width:650px;height:50px;">
 <div style="float:left;font-size:12px;width:348px;">
   <p>Date Range: 1 Jan 2014 – 31 March 2014</p>
 <p>Nature of Reporting - Rolling | Fixed</p>
@@ -86,9 +64,9 @@ position: static;
 </div>
 
 
-<div style="width:958px;padding-bottom:9px;height:325px;background-color:#ffffff;">
-<div style="width:650px;float:left;">
-    <div style="float:left;height:250px;background-color:#D9D9D9;width:45px;"> 
+<div style="width:945px;padding-bottom:9px;height:325px;background-color:#ffffff;">
+<div style="width:620px;float:left;">
+    <!--<div style="float:left;height:250px;background-color:#D9D9D9;width:45px;"> 
       <div style="background-color:#93CDDD;width:35px;font-size:13px;margin-right:5px;margin-left:5px;text-align:center;color:#ffffff; margin-top: 15px;
     padding-top: 10px;height:25px;" >
       </div>
@@ -105,7 +83,7 @@ position: static;
     padding-top: 10px;height:25px;" >
       </div>
      
-    </div>
+    </div>-->
 
 
 <div style="float:left;">
@@ -120,17 +98,21 @@ position: static;
 
 <div style="float:left;width:308px;">    
 
-
 <div style="background-color:#D9D9D9;border:1px solid #948a54;font-family:Verdana,Arial,Helvetica,sans-serif; font-size: 14px; ">
-<h3 style="background-color:#5C5443;clear:both;font-size:12px;color:#ffffff;margin:0px;text-align:center">Insights</h3>
- <marquee onmouseout="this.start();" onmouseover="this.stop();" direction="up" behavior="scroll">* Campaign 6 has the 3rd highest CTR% of 2.5%.<br>
-    * Campaign 10 has the 2nd highest ROI % of 193.4%.<br>
-  * Campaign 4 has the highest New Registration of 3343.<br>
-  * Campaign 10 has the 3rd highest Sales Value of $538,914.<br>
-  * Campaign 7 has the 2nd highest New Registration of 3303. <br>
-  * Campaign 10 has the 3rd highest New Registration of 3301.
+<h3 style="background-color:#5C5443;clear:both;font-size:14px;color:#ffffff;margin:0px;text-align:center; font-family:Arial, Helvetica, sans-serif;">Insights</h3>
+ <marquee onmouseout="this.start();" onmouseover="this.stop();" direction="up" behavior="scroll">
+ <ul class="marq-in">
+  <li>Campaign 6 has the 3rd highest CTR% of 2.5%.</li>
+    <li>Campaign 10 has the 2nd highest ROI % of 193.4%.</li>
+    <li>Campaign 4 has the highest New Registration of 3343.</li>
+    <li>Campaign 10 has the 3rd highest Sales Value of $538,914.</li>
+    <li>Campaign 7 has the 2nd highest New Registration of 3303.</li>
+    <li>Campaign 10 has the 3rd highest New Registration of 3301.</li>
+ </ul>
  </marquee>
  </div>
+
+
 <div style="background-color:#D9D9D9;margin-left:13px"> <p style="background-color:#D9D9D9;float:left;width:87px;font-size:13px;margin-right:14px;text-align:center;color:#ffffff; margin-top: 5px;
     padding-top: 10px;height:25px;"> <a href="#deliverykpi" class="login_link">Share</a></p><p href="#responsekpi" style="float:left;width:87px;background-color:#D9D9D9;text-align:center;font-size:13px;text-align:center;color:#ffffff;margin-right:13px;margin-top: 5px;
     padding-top: 10px;height:25px;"><a href="#responsekpi" class="login_link">Export</a></p>
@@ -153,7 +135,7 @@ position: static;
     <!--tab 2 starts-->
     <div id="tab2" >
       <div id="processFlow">
-         <div style="width:650px;height:45px;">
+         <div style="width:650px;height:50px;">
 <div style="float:left;font-size:12px;width:348px;">
   <p>Date Range: 1 Jan 2014 – 31 March 2014</p>
 <p>Nature of Reporting - Rolling | Fixed</p>
@@ -166,9 +148,9 @@ position: static;
 </div>
 
 
-<div style="width:958px;padding-bottom:9px;height:325px;background-color:#ffffff;">
-<div style="width:650px;float:left;">
-    <div style="float:left;height:250px;background-color:#D9D9D9;width:45px;"> 
+<div style="width:945px;padding-bottom:9px;height:325px;background-color:#ffffff;">
+<div style="width:620px;float:left;">
+    <!--<div style="float:left;height:250px;background-color:#D9D9D9;width:45px;"> 
       <div style="background-color:#93CDDD;width:35px;font-size:13px;margin-right:5px;margin-left:5px;text-align:center;color:#ffffff; margin-top: 15px;
     padding-top: 10px;height:25px;" >
       </div>
@@ -185,7 +167,7 @@ position: static;
     padding-top: 10px;height:25px;" >
       </div>
      
-    </div>
+    </div>-->
 
 
 <div style="float:left;">
@@ -200,13 +182,16 @@ position: static;
 
 
 <div style="background-color:#D9D9D9;border:1px solid #948a54;font-family:Verdana,Arial,Helvetica,sans-serif; font-size: 14px; ">
-<h3 style="background-color:#5C5443;clear:both;font-size:12px;color:#ffffff;margin:0px;text-align:center">Insights</h3>
- <marquee onmouseout="this.start();" onmouseover="this.stop();" direction="up" behavior="scroll">* Campaign 6 has the 3rd highest CTR% of 2.5%.<br>
-    * Campaign 10 has the 2nd highest ROI % of 193.4%.<br>
-  * Campaign 4 has the highest New Registration of 3343.<br>
-  * Campaign 10 has the 3rd highest Sales Value of $538,914.<br>
-  * Campaign 7 has the 2nd highest New Registration of 3303. <br>
-  * Campaign 10 has the 3rd highest New Registration of 3301.
+<h3 style="background-color:#5C5443;clear:both;font-size:14px;color:#ffffff;margin:0px;text-align:center; font-family:Arial, Helvetica, sans-serif;">Insights</h3>
+ <marquee onmouseout="this.start();" onmouseover="this.stop();" direction="up" behavior="scroll">
+ <ul class="marq-in">
+  <li>Campaign 6 has the 3rd highest CTR% of 2.5%.</li>
+    <li>Campaign 10 has the 2nd highest ROI % of 193.4%.</li>
+    <li>Campaign 4 has the highest New Registration of 3343.</li>
+    <li>Campaign 10 has the 3rd highest Sales Value of $538,914.</li>
+    <li>Campaign 7 has the 2nd highest New Registration of 3303.</li>
+    <li>Campaign 10 has the 3rd highest New Registration of 3301.</li>
+ </ul>
  </marquee>
  </div>
 <div style="background-color:#D9D9D9;margin-left:13px"> <p style="background-color:#D9D9D9;float:left;width:87px;font-size:13px;margin-right:14px;text-align:center;color:#ffffff; margin-top: 5px;
@@ -228,7 +213,6 @@ position: static;
 </div>   
       <div class="clear"></div>
     
-    
       </div>
       <div class="clear"></div>
     </div>
@@ -236,3 +220,7 @@ position: static;
     <div class="clear"></div>
 
 
+<script type="text/javascript">
+$('#icons img').resizeOnApproach();
+
+</script>

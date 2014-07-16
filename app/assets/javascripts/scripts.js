@@ -7,7 +7,7 @@ var chart;
         width:300,
         height:250,
             plotBackgroundColor: null,
-            plotBorderWidth: 1,//null,
+            plotBorderWidth: null,//1,
             plotShadow: false
         },
         title: {
@@ -35,12 +35,12 @@ var chart;
             type: 'pie',
             name: 'Vendorwise -CTR',
             data: [
-                ['Vendor Partner 01',   2.6],
-                ['Vendor Partner 02',   3.1],                
-                ['Vendor Partner 03',    1.8],
-                ['Vendor Partner 04',     2.0],
-                ['Vendor Partner 05',   3.6],
-                ['Vendor Partner 06',   1.5],
+                ['CBS Interactive',   2.6],
+                ['Entrepreneur.com',   3.1],                
+                ['Laptop Mag',    1.8],
+                ['Federated Media',     2.0],
+                ['Tech Target',   3.6],
+                ['Forbes',   1.5],
             ]
         }]
         });
@@ -59,7 +59,7 @@ var chart;
         width:300,
         height:250,
             plotBackgroundColor: null,
-            plotBorderWidth: 1,//null,
+            plotBorderWidth: null,//1,
             plotShadow: false
         },
         title: {
@@ -84,12 +84,12 @@ var chart;
             type: 'pie',
             name: 'Vendorwise -Total Cost',
             data: [
-                ['Vendor Partner 01',   115258.87],
-                ['Vendor Partner 02',   59455.42],                
-                ['Vendor Partner 03',    107920.24],
-                ['Vendor Partner 04',     74193.38],
-                ['Vendor Partner 05',   86694.71],
-                ['Vendor Partner 06',   82433.04],
+                ['CBS Interactive',   115258.87],
+                ['Entrepreneur.com',   59455.42],                
+                ['Laptop Mag',    107920.24],
+                ['Federated Media',     74193.38],
+                ['Tech Target',   86694.71],
+                ['Forbes',   82433.04],
             ]
         }]
         });
@@ -106,7 +106,7 @@ var chart;
         width:300,
         height:250,
             plotBackgroundColor: null,
-            plotBorderWidth: 1,//null,
+            plotBorderWidth: null,//1,
             plotShadow: false
         },
         title: {
@@ -134,12 +134,12 @@ var chart;
             type: 'pie',
             name: 'Vendorwise -Impressions',
             data: [
-                ['Vendor Partner 01',   6211812],
-                ['Vendor Partner 02',   3868387],                
-                ['Vendor Partner 03',    1991547],
-                ['Vendor Partner 04',     1348303],
-                ['Vendor Partner 05',   1151728],
-                ['Vendor Partner 06',   1454921],
+                ['CBS Interactive',   6211812],
+                ['Entrepreneur.com',   3868387],                
+                ['Laptop Mag',    1991547],
+                ['Federated Media',     1348303],
+                ['Tech Target',   1151728],
+                ['Forbes',   1454921],
             ]
         }]
         });
@@ -202,22 +202,22 @@ var chart;
                 }
             },
             series: [{
-                name: 'Vendor Partner 01',
+                name: 'CBS Interactive',
                 data: [0.2,0.0,0.1,0.1,0.2,0.1,0.1,0.1,0.0]
             }, {
-                name: 'Vendor Partner 02',
+                name: 'Entrepreneur.com',
                 data: [4.2,5.4,2.7,1.8,0.4,4.4,3.8,3.7,4.2]
             }, {
-                name: 'Vendor Partner 03',
+                name: 'Laptop Mag',
                 data: [0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,4.0]
             }, {
-                name: 'Vendor Partner 04',
+                name: 'Federated Media',
                 data: [1.8,0.4,4.4,3.8,3.7,4.2,5.2,2.5,0.1]
             }, {
-                name: 'Vendor Partner 05',
+                name: 'Tech Target',
                 data: [0.1,0.2,0.1,0.1,0.1,0.0,0.0,8.2,21.0]
             }, {
-                name: 'Vendor Partner 06',
+                name: 'Forbes',
                 data: [1.8,0.4,4.4,3.8,3.7,4.2,0.1,0.1,0.1]
             }]
         });
@@ -373,7 +373,7 @@ var chart;
         width:300,
         height:250,
             plotBackgroundColor: null,
-            plotBorderWidth: 1,//null,
+            plotBorderWidth: null,//1,
             plotShadow: false
         },
         title: {
@@ -398,12 +398,12 @@ var chart;
             type: 'pie',
             name: 'Vendorwise -Total Cost',
             data: [
-                ['Vendor Partner 01',   115258.87],
-                ['Vendor Partner 02',   59455.42],                
-                ['Vendor Partner 03',    107920.24],
-                ['Vendor Partner 04',     74193.38],
-                ['Vendor Partner 05',   86694.71],
-                ['Vendor Partner 06',   82433.04],
+                ['CBS Interactive',   115258.87],
+                ['Entrepreneur.com',   59455.42],                
+                ['Laptop Mag',    107920.24],
+                ['Federated Media',     74193.38],
+                ['Tech Target',   86694.71],
+                ['Forbes',   82433.04],
             ]
         }]
         });
@@ -420,7 +420,7 @@ var chart;
         width:300,
         height:250,
             plotBackgroundColor: null,
-            plotBorderWidth: 1,//null,
+            plotBorderWidth: null,//1,
             plotShadow: false
         },
         title: {
@@ -448,12 +448,12 @@ var chart;
             type: 'pie',
             name: 'Vendorwise -Impressions',
             data: [
-                ['Vendor Partner 01',   6211812],
-                ['Vendor Partner 02',   3868387],                
-                ['Vendor Partner 03',    1991547],
-                ['Vendor Partner 04',     1348303],
-                ['Vendor Partner 05',   1151728],
-                ['Vendor Partner 06',   1454921],
+                ['CBS Interactive',   6211812],
+                ['Entrepreneur.com',   3868387],                
+                ['Laptop Mag',    1991547],
+                ['Federated Media',     1348303],
+                ['Tech Target',   1151728],
+                ['Forbes',   1454921],
             ]
         }]
         });
@@ -472,7 +472,7 @@ var chart;
         width:300,
         height:250,
             plotBackgroundColor: null,
-            plotBorderWidth: 1,//null,
+            plotBorderWidth: null,//1,
             plotShadow: false
         },
         title: {
@@ -500,12 +500,12 @@ var chart;
             type: 'pie',
             name: 'Vendorwise -CTR',
             data: [
-                ['Vendor Partner 01',   2.6],
-                ['Vendor Partner 02',   3.1],                
-                ['Vendor Partner 03',    1.8],
-                ['Vendor Partner 04',     2.0],
-                ['Vendor Partner 05',   3.6],
-                ['Vendor Partner 06',   1.5],
+                ['CBS Interactive',   2.6],
+                ['Entrepreneur.com',   3.1],                
+                ['Laptop Mag',    1.8],
+                ['Federated Media',     2.0],
+                ['Tech Target',   3.6],
+                ['Forbes',   1.5],
             ]
         }]
         });
@@ -522,20 +522,20 @@ var chart;
 
 
 $(document).ready(function(){
-          $("#tab1").show();
+          $("#tab2").show();
 $(".tab1link").click(function(){
         $("#tab2").hide();
         $("#tab1").show();
-        $(".tabButtons li:first-child").addClass('active');
-        $(".tabButtons li:last-child").removeClass('active');   
+        $(".tabButtons li:first-child").removeClass('active');
+        $(".tabButtons li:last-child").addClass('active');   
         
     
     });
     $(".tab2link").click(function(){
         $("#tab1").hide();
         $("#tab2").show();
-        $(".tabButtons li:last-child").addClass('active');
-        $(".tabButtons li:first-child").removeClass('active');
+        $(".tabButtons li:last-child").removeClass('active');
+        $(".tabButtons li:first-child").addClass('active');
     
     });
 });
@@ -581,22 +581,22 @@ var chart;
                 }
             },
             series: [{
-                name: 'Vendor Partner 01',
+                name: 'CBS Interactive',
                 data: [1288,0,24747.62,7623.55,14333,11230.12,8434.43,8853.34,9255.86]
             }, {
-                name: 'Vendor Partner 02',
+                name: 'Entrepreneur.com',
                 data: [3269,3024,5222,5629.75,149,2811.49,3824.5,3363.75,4355.74]
             }, {
-                name: 'Vendor Partner 03',
+                name: 'Laptop Mag',
                 data: [7855.04,7869.6,7464.8,8305.19,8460.28,8234.52,6040.5,5959.52,7332.5]
             }, {
-                name: 'Vendor Partner 04',
+                name: 'Federated Media',
                 data: [4916,4485,5265,6465,6193,3442,5943,2645,7486]
             }, {
-                name: 'Vendor Partner 05',
+                name: 'Tech Target',
                 data: [7904,4987,3860,4113,4207,7822,4555,6007,6385]
             }, {
-                name: 'Vendor Partner 06',
+                name: 'Forbes',
                 data: [7606,4549,6042,2556,4171,6548,8736,6281,4492]
             }]
         });
@@ -648,22 +648,22 @@ var chart;
                 }
             },
             series: [{
-                name: 'Vendor Partner 01',
+                name: 'CBS Interactive',
                 data: [101353,13616,585968,180281,458121,290977,210850,1396293,1372700]
             }, {
-                name: 'Vendor Partner 02',
+                name: 'Entrepreneur.com',
                 data: [44307,31778,114566,184531,20564,35058,56854,50527.75,62583]
             }, {
-                name: 'Vendor Partner 03',
+                name: 'Laptop Mag',
                 data: [196377,196766,186620,208899,211507,205863,151786,148988,114393]
             }, {
-                name: 'Vendor Partner 04',
+                name: 'Federated Media',
                 data: [28033,21851,127632,161365,45556,162697,93058,161907,123203]
             }, {
-                name: 'Vendor Partner 05',
+                name: 'Tech Target',
                 data: [45476,26037,61789,162661,85913,77486,141645,29187,63011]
             }, {
-                name: 'Vendor Partner 06',
+                name: 'Forbes',
                 data: [175639,129868,26477,62126,80683,126824,12024,152541,92994]
             }]
         });
@@ -715,22 +715,22 @@ var chart;
                 }
             },
             series: [{
-                name: 'Vendor Partner 01',
+                name: 'CBS Interactive',
                 data: [0.2,0.0,0.1,0.1,0.2,0.1,0.1,0.1,0.0]
             }, {
-                name: 'Vendor Partner 02',
+                name: 'Entrepreneur.com',
                 data: [4.2,5.4,2.7,1.8,0.4,4.4,3.8,3.7,4.2]
             }, {
-                name: 'Vendor Partner 03',
+                name: 'Laptop Mag',
                 data: [0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,4.0]
             }, {
-                name: 'Vendor Partner 04',
+                name: 'Federated Media',
                 data: [1.8,0.4,4.4,3.8,3.7,4.2,5.2,2.5,0.1]
             }, {
-                name: 'Vendor Partner 05',
+                name: 'Tech Target',
                 data: [0.1,0.2,0.1,0.1,0.1,0.0,0.0,8.2,21.0]
             }, {
-                name: 'Vendor Partner 06',
+                name: 'Forbes',
                 data: [1.8,0.4,4.4,3.8,3.7,4.2,0.1,0.1,0.1]
             }]
         });
@@ -862,23 +862,23 @@ var chart;
             groupPadding: 0,
             pointPadding: 0,
             
-                name: 'Vendor Partner 01',
+                name: 'CBS Interactive',
                 data: [115258.87,6211812,2.6]
             }, {
-                name: 'Vendor Partner 02',
+                name: 'Entrepreneur.com',
                 data: [59455.42,868387,3.1]
             }, {
-                name: 'Vendor Partner 03',
+                name: 'Laptop Mag',
                 data: [107920.24,1991547,1.9]
             }, {
-                name: 'Vendor Partner 04',
+                name: 'Federated Media',
                 data: [74193.38,1348303,2.0]
             }
                      , {
-                name: 'Vendor Partner 05',
+                name: 'Tech Target',
                 data: [86694.71,1151728,3.6]
             }, {
-                name: 'Vendor Partner 06',
+                name: 'Forbes',
                 data: [82433.04,1454921,1.5]
             }
                     ]
